@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MSys_TB12_Cls03_DATABASE</title>
+<style>
+:root{--bg:#f4f5f7;--surface:#fff;--surface2:#eceff3;--fg:#1a202b;--muted:#5b6474;--line:#d6dbe3;--accent:#962c3b;--code:#eef1f5}
+@media (prefers-color-scheme:dark){:root{--bg:#11151c;--surface:#181e27;--surface2:#202834;--fg:#e2e6ed;--muted:#98a2b3;--line:#2b3340;--accent:#e57c8b;--code:#202834;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 "Segoe UI",system-ui,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:28px max(16px,env(safe-area-inset-left)) 64px}
+nav{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:24px}
+nav a{color:var(--muted);text-decoration:none} nav a.att{color:var(--accent);font-weight:600}
+h1{font-size:30px;line-height:1.2;margin:8px 0 12px} h2{font-size:21px;margin:34px 0 10px;padding-top:12px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:22px 0 8px} h1,h2,h3{text-wrap:balance}
+p{margin:0 0 12px;max-width:80ch} ul,ol{margin:0 0 12px;padding-left:22px} li{margin:3px 0}
+a{color:var(--accent)}
+code{font-family:Consolas,"Cascadia Mono",monospace;font-size:.88em;background:var(--code);padding:1px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px;overflow-x:auto;font:13px/1.5 Consolas,"Cascadia Mono",monospace}
+pre code{background:none;padding:0;font-size:inherit}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface);margin:0 0 14px}
+table{border-collapse:collapse;width:100%;font-size:14px} th,td{text-align:left;vertical-align:top;padding:8px 11px;border-bottom:1px solid var(--line)}
+th{background:var(--surface2);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)} tr:last-child td{border-bottom:0}
+hr{border:0;border-top:1px solid var(--line);margin:24px 0}
+footer{margin-top:40px;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="MSys_TB12_00_MASTER_PLAN.html">MSys TB12 – Master Plan delle classi</a><a href="MSys_TB12_Cls01_LOG.html">MSys_TB12_Cls01_LOG</a><a href="MSys_TB12_Cls02_FILE.html">MSys_TB12_Cls02_FILE</a><a href="MSys_TB12_Cls03_DATABASE.html" class="att">MSys_TB12_Cls03_DATABASE</a><a href="MSys_TB12_Cls04_OGGETTI.html">MSys_TB12_Cls04_OGGETTI</a></nav>
+<h1 id="msys-tb12-cls03-database">MSys_TB12_Cls03_DATABASE</h1>
+<p>Database corrente o esterno con DAO: recordset, SQL di comando, query salvate (singole o in elenco), controlli di esistenza, conteggi, transazioni, tabelle collegate e compattazione. Riunisce la vecchia <code>clsDatabase</code> e il vecchio <code>ClsManager</code>.</p>
+<p>File: <code>OBJECT\CLASSI\MSys_TB12_Cls03_DATABASE.cls</code> · Dipendenze: riferimento DAO · Esempi: <code>ESEMPI\MSys_TB12_Cls03_DATABASE_ESEMPI.txt</code></p>
+<h2 id="metodi">Metodi</h2>
+<div class="tbl"><table><thead><tr><th>Metodo</th><th>Restituisce</th><th>Cosa fa</th><th>Sezione</th></tr></thead><tbody><tr><td><code>Apri([percorso], [solaLettura])</code></td><td>Boolean</td><td>senza percorso: database corrente; con percorso: esterno</td><td>#03.01#</td></tr><tr><td><code>GetDatabase()</code></td><td>DAO.Database</td><td>database in uso (compatibile)</td><td>#03.02#</td></tr><tr><td><code>Chiudi()</code></td><td>–</td><td>chiude l&#x27;esterno, rilascia il corrente</td><td>#03.03#</td></tr><tr><td><code>ApriRecordset(sql, [db], [tipo])</code></td><td>DAO.Recordset</td><td>Nothing in caso di errore</td><td>#04.01#</td></tr><tr><td><code>ContaRecord(origine, [criterio])</code></td><td>Long</td><td>-1 in caso di errore</td><td>#04.02#</td></tr><tr><td><code>ValoreSQL(sql, [seVuoto])</code></td><td>Variant</td><td>primo campo del primo record</td><td>#04.03#</td></tr><tr><td><code>EseguiSQL(sql, [db])</code></td><td>Boolean</td><td><code>RecordInteressati</code> = righe toccate</td><td>#05.01#</td></tr><tr><td><code>EseguiQuery(nome, [usaDoCmd])</code></td><td>Boolean</td><td>query di comando salvata; <code>usaDoCmd</code> se legge valori dalle form</td><td>#05.02#</td></tr><tr><td><code>QueryEsiste</code>, <code>TabellaEsiste</code>, <code>CampoEsiste</code></td><td>Boolean</td><td>senza leggere MSysObjects</td><td>#06#</td></tr><tr><td><code>EseguiElencoQuery(elenco, [mostraReport], [usaDoCmd])</code></td><td>Boolean</td><td>elenco di <code>Array(nome, descrizione)</code>; report in <code>UltimoReport</code></td><td>#07.01#</td></tr><tr><td><code>AggiungiQuery(elenco, nome, [descrizione])</code></td><td>–</td><td>costruisce l&#x27;elenco</td><td>#07.02#</td></tr><tr><td><code>IniziaTransazione</code>, <code>ConfermaTransazione</code>, <code>AnnullaTransazione</code></td><td>Boolean</td><td>transazione sul workspace predefinito</td><td>#08#</td></tr><tr><td><code>CollegaTabella(percorsoDb, tabella, [nomeLocale])</code></td><td>Boolean</td><td>crea o ricrea un collegamento</td><td>#09.01#</td></tr><tr><td><code>RicollegaTabelle(nuovoPercorso, [filtroNome], [vecchioPercorso])</code></td><td>Long</td><td>quanti collegamenti aggiornati</td><td>#09.02#</td></tr><tr><td><code>ElencoCollegamenti([filtroNome])</code></td><td>Collection</td><td>voci <code>nome|percorso</code></td><td>#09.03#</td></tr><tr><td><code>CompattaDatabase(origine, destinazione)</code></td><td>Boolean</td><td>database chiuso, destinazione nuova</td><td>#10.01#</td></tr></tbody></table></div>
+<h2 id="dal-vecchio-manager-a-eseguielencoquery">Dal vecchio Manager a EseguiElencoQuery</h2>
+<p>Il <code>ClsManager</code> aveva 15 query di altri progetti scritte nel codice (PRES3000, LLPP_ATTI…). Ora la classe non conosce nessuna query: l&#x27;elenco lo prepara chi la usa.</p>
+<pre><code>Dim dbc As New MSys_TB12_Cls03_DATABASE, el As Collection
+dbc.AggiungiQuery el, &quot;PRES3000_Qry01_10_AGGIORNA_Campo_IDKEY_CALENDARIO&quot;, &quot;Aggiorna ID Key Calendario&quot;
+dbc.AggiungiQuery el, &quot;LLPP_ATTI_Qy01-11_AGGIORNA_ANNO&quot;, &quot;Aggiorna Anno Atto&quot;
+If Not dbc.EseguiElencoQuery(el, True) Then Debug.Print dbc.UltimoReport</code></pre>
+<h2 id="propriet">Proprietà</h2>
+<p><code>DatabaseDAO</code>, <code>Percorso</code>, <code>RecordInteressati</code>, <code>UltimoReport</code>, <code>CartellaLog</code>, <code>LogAttivo</code>, <code>LogDettagliato</code>, <code>UltimoErrore</code>.</p>
+<h2 id="log">Log</h2>
+<p><code>&lt;cartella del database&gt;\Logs\MSys_TB12_Cls03_DATABASE_AAAA_MM_GG.txt</code>. Ogni comando SQL eseguito è scritto con il numero di record toccati; ogni errore con il testo SQL e la posizione.</p>
+<h2 id="indice-delle-sezioni">Indice delle sezioni</h2>
+<ul><li><code>#01#</code> IMPOSTAZIONI · <code>#02#</code> CICLO_DI_VITA_E_PROPRIETA</li><li><code>#03#</code> CONNESSIONE: <code>#03.01#</code> Apri (<code>.01</code> chiusura precedente, <code>.02</code> corrente, <code>.03</code> esterno), <code>#03.02#</code>, <code>#03.03#</code></li><li><code>#04#</code> LETTURA · <code>#05#</code> SCRITTURA: <code>#05.01#</code> (<code>.01</code> database, <code>.02</code> Execute), <code>#05.02#</code> (<code>.01</code> esistenza, <code>.02</code> esecuzione, <code>.03</code> esito)</li><li><code>#06#</code> CONTROLLI · <code>#07#</code> ELENCO_QUERY: <code>#07.01#</code> (<code>.01</code> controlli, <code>.02</code> ciclo, <code>.03</code> report), <code>#07.02#</code></li><li><code>#08#</code> TRANSAZIONI · <code>#09#</code> COLLEGAMENTI: <code>#09.01#</code> (<code>.01</code> esistente, <code>.02</code> creazione), <code>#09.02#</code> (<code>.01</code> filtro, <code>.02</code> RefreshLink), <code>#09.03#</code></li><li><code>#10#</code> MANUTENZIONE · <code>#90#</code> LOG_INTERNO</li></ul>
+<footer>Pagina generata da STRUMENTI\md2html.py a partire dal file .md con lo stesso nome: per modificarla cambia il .md e lancia GENERA_HTML.bat.</footer>
+</div>
+</body>
+</html>

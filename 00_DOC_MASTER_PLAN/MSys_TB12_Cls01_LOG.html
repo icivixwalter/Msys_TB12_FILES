@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MSys_TB12_Cls01_LOG</title>
+<style>
+:root{--bg:#f4f5f7;--surface:#fff;--surface2:#eceff3;--fg:#1a202b;--muted:#5b6474;--line:#d6dbe3;--accent:#962c3b;--code:#eef1f5}
+@media (prefers-color-scheme:dark){:root{--bg:#11151c;--surface:#181e27;--surface2:#202834;--fg:#e2e6ed;--muted:#98a2b3;--line:#2b3340;--accent:#e57c8b;--code:#202834;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 "Segoe UI",system-ui,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:28px max(16px,env(safe-area-inset-left)) 64px}
+nav{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:24px}
+nav a{color:var(--muted);text-decoration:none} nav a.att{color:var(--accent);font-weight:600}
+h1{font-size:30px;line-height:1.2;margin:8px 0 12px} h2{font-size:21px;margin:34px 0 10px;padding-top:12px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:22px 0 8px} h1,h2,h3{text-wrap:balance}
+p{margin:0 0 12px;max-width:80ch} ul,ol{margin:0 0 12px;padding-left:22px} li{margin:3px 0}
+a{color:var(--accent)}
+code{font-family:Consolas,"Cascadia Mono",monospace;font-size:.88em;background:var(--code);padding:1px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px;overflow-x:auto;font:13px/1.5 Consolas,"Cascadia Mono",monospace}
+pre code{background:none;padding:0;font-size:inherit}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface);margin:0 0 14px}
+table{border-collapse:collapse;width:100%;font-size:14px} th,td{text-align:left;vertical-align:top;padding:8px 11px;border-bottom:1px solid var(--line)}
+th{background:var(--surface2);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)} tr:last-child td{border-bottom:0}
+hr{border:0;border-top:1px solid var(--line);margin:24px 0}
+footer{margin-top:40px;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="MSys_TB12_00_MASTER_PLAN.html">MSys TB12 – Master Plan delle classi</a><a href="MSys_TB12_Cls01_LOG.html" class="att">MSys_TB12_Cls01_LOG</a><a href="MSys_TB12_Cls02_FILE.html">MSys_TB12_Cls02_FILE</a><a href="MSys_TB12_Cls03_DATABASE.html">MSys_TB12_Cls03_DATABASE</a><a href="MSys_TB12_Cls04_OGGETTI.html">MSys_TB12_Cls04_OGGETTI</a></nav>
+<h1 id="msys-tb12-cls01-log">MSys_TB12_Cls01_LOG</h1>
+<p>Logger per il codice applicativo: form, moduli e altre classi. Scrive errori con la posizione nel codice, messaggi informativi e righe su file personalizzati, e fa la manutenzione dei log. Ogni riga va <strong>identica</strong> in <code>Debug.Print</code> e nel file.</p>
+<p>File: <code>OBJECT\CLASSI\MSys_TB12_Cls01_LOG.cls</code> · Dipendenze: nessuna · Esempi: <code>ESEMPI\MSys_TB12_Cls01_LOG_ESEMPI.txt</code></p>
+<h2 id="file-di-log">File di log</h2>
+<p><code>&lt;cartella del database&gt;\Logs\&lt;NomeBase&gt;_&lt;TIPO&gt;_AAAA_MM_GG.txt</code></p>
+<ul><li><code>NomeBase</code> predefinito: <code>MSys_TB12_Cls01_LOG</code>. Conviene impostarlo con il nome del modulo che usa il logger (es. <code>Form_MASTER</code>).</li><li><code>TIPO</code>: <code>ERRORI</code> (solo errori) oppure <code>INFO</code> (tutto il resto, più una copia degli errori, così la sequenza completa si legge in un solo file).</li><li>Un file al giorno: <code>PulisciLog</code> elimina quelli vecchi.</li></ul>
+<p>Riga tipo:</p>
+<pre><code>2026-11-15 10:30:12 | Origine: Form_MASTER | Funzione: Form_Load | Pos: 03.02    | Esito: OK     | pagine caricate</code></pre>
+<h2 id="metodi">Metodi</h2>
+<div class="tbl"><table><thead><tr><th>Metodo</th><th>Parametri</th><th>Cosa fa</th><th>Sezione</th></tr></thead><tbody><tr><td><code>Scrivi</code></td><td>funzione, posizione, esito, testo</td><td>riga generica; <code>ERRORE</code> va nel file ERRORI</td><td>#03.01#</td></tr><tr><td><code>ScriviErrore</code></td><td>funzione, posizione, numero, descrizione</td><td>errore con la posizione nel codice; aggiorna <code>UltimoErrore</code></td><td>#03.02#</td></tr><tr><td><code>ScriviLogErrore</code></td><td>nomeFunzione, numero, descrizione, [riga]</td><td>compatibile con la versione precedente</td><td>#03.03#</td></tr><tr><td><code>ScriviInfo</code> / <code>ScriviLogEvento</code></td><td>nomeFunzione, messaggio</td><td>messaggio informativo (compatibili)</td><td>#03.04#</td></tr><tr><td><code>ScriviLogPersonalizzato</code></td><td>nomeFunzione, messaggio, nomeFile</td><td>riga in un file scelto dentro <code>Logs</code></td><td>#03.05#</td></tr><tr><td><code>Separatore</code></td><td>[titolo]</td><td>riga di separazione</td><td>#03.06#</td></tr><tr><td><code>CartellaLogs</code></td><td>–</td><td>percorso della cartella (creata se manca)</td><td>#04.01#</td></tr><tr><td><code>PercorsoFile</code></td><td>[tipo], [giorno]</td><td>percorso del file del giorno</td><td>#04.02#</td></tr><tr><td><code>PulisciLog</code></td><td>[giorni = 30], [filtro = *.txt]</td><td>elimina i file più vecchi; restituisce quanti</td><td>#05.01#</td></tr><tr><td><code>DimensioneLog</code></td><td>[filtro]</td><td>byte occupati</td><td>#05.02#</td></tr><tr><td><code>ContaRigheLog</code> (<code>ContaLinieLog</code>)</td><td>[filtro]</td><td>righe totali</td><td>#05.03#</td></tr><tr><td><code>VisualizzaLog</code></td><td>[tipo = ERRORI]</td><td>apre il log di oggi</td><td>#05.04#</td></tr></tbody></table></div>
+<h2 id="propriet">Proprietà</h2>
+<div class="tbl"><table><thead><tr><th>Proprietà</th><th>Predefinito</th><th>Uso</th></tr></thead><tbody><tr><td><code>CartellaLog</code></td><td><code>&lt;db&gt;\Logs</code></td><td>cartella diversa per i log</td></tr><tr><td><code>NomeBase</code></td><td><code>MSys_TB12_Cls01_LOG</code></td><td>prima parte del nome dei file</td></tr><tr><td><code>Origine</code></td><td>nome della classe</td><td>testo della colonna Origine</td></tr><tr><td><code>Attivo</code></td><td><code>True</code></td><td><code>False</code> = non scrive nulla</td></tr><tr><td><code>ScriviAVideo</code></td><td><code>True</code></td><td><code>False</code> = niente <code>Debug.Print</code></td></tr><tr><td><code>UltimoErrore</code></td><td>–</td><td>sola lettura: ultimo errore con posizione</td></tr></tbody></table></div>
+<h2 id="esempio-rapido">Esempio rapido</h2>
+<pre><code>Dim lg As New MSys_TB12_Cls01_LOG
+lg.NomeBase = &quot;Form_MASTER&quot;: lg.Origine = &quot;Form_MASTER&quot;
+lg.Scrivi &quot;Form_Load&quot;, &quot;03.01&quot;, &quot;INIZIO&quot;, &quot;apertura form&quot;
+...
+ERRORE:
+    lg.ScriviErrore &quot;Form_Load&quot;, sPos_s, Err.Number, Err.Description</code></pre>
+<h2 id="indice-delle-sezioni">Indice delle sezioni</h2>
+<ul><li><code>#01#</code> IMPOSTAZIONI: <code>#01.01#</code> costanti, <code>#01.02#</code> variabili</li><li><code>#02#</code> CICLO_DI_VITA_E_PROPRIETA: <code>#02.01#</code> Initialize, <code>#02.02#</code> Terminate, <code>#02.03#</code> proprietà</li><li><code>#03#</code> SCRITTURA: <code>#03.01#</code> Scrivi, <code>#03.02#</code> ScriviErrore (<code>.01</code> ERRORI, <code>.02</code> copia in INFO), <code>#03.03#</code> ScriviLogErrore, <code>#03.04#</code> ScriviInfo/Evento, <code>#03.05#</code> personalizzato, <code>#03.06#</code> separatore</li><li><code>#04#</code> FILE_DI_LOG: <code>#04.01#</code> cartella (<code>.01</code> scelta, <code>.02</code> creazione), <code>#04.02#</code> percorso, <code>#04.03#</code> scrittura (<code>.01</code> video, <code>.02</code> file, <code>.03</code> emergenza)</li><li><code>#05#</code> MANUTENZIONE: <code>#05.01#</code> pulizia (<code>.01</code> scadenza, <code>.02</code> eliminazione), <code>#05.02#</code> dimensione, <code>#05.03#</code> righe, <code>#05.04#</code> visualizza</li><li><code>#06#</code> EMERGENZA: <code>#06.01#</code> file in <code>%TEMP%</code> se la cartella non è scrivibile</li></ul>
+<h2 id="rispetto-alla-versione-precedente">Rispetto alla versione precedente</h2>
+<ul><li>Un file al giorno e per tipo, con nome che indica chi l&#x27;ha scritto.</li><li>Posizione nel codice in ogni riga.</li><li>Nessun messaggio a video in caso di errore del logger: il programma non si ferma.</li></ul>
+<footer>Pagina generata da STRUMENTI\md2html.py a partire dal file .md con lo stesso nome: per modificarla cambia il .md e lancia GENERA_HTML.bat.</footer>
+</div>
+</body>
+</html>

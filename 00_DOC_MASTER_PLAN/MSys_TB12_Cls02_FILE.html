@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MSys_TB12_Cls02_FILE</title>
+<style>
+:root{--bg:#f4f5f7;--surface:#fff;--surface2:#eceff3;--fg:#1a202b;--muted:#5b6474;--line:#d6dbe3;--accent:#962c3b;--code:#eef1f5}
+@media (prefers-color-scheme:dark){:root{--bg:#11151c;--surface:#181e27;--surface2:#202834;--fg:#e2e6ed;--muted:#98a2b3;--line:#2b3340;--accent:#e57c8b;--code:#202834;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 "Segoe UI",system-ui,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:28px max(16px,env(safe-area-inset-left)) 64px}
+nav{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:24px}
+nav a{color:var(--muted);text-decoration:none} nav a.att{color:var(--accent);font-weight:600}
+h1{font-size:30px;line-height:1.2;margin:8px 0 12px} h2{font-size:21px;margin:34px 0 10px;padding-top:12px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:22px 0 8px} h1,h2,h3{text-wrap:balance}
+p{margin:0 0 12px;max-width:80ch} ul,ol{margin:0 0 12px;padding-left:22px} li{margin:3px 0}
+a{color:var(--accent)}
+code{font-family:Consolas,"Cascadia Mono",monospace;font-size:.88em;background:var(--code);padding:1px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px;overflow-x:auto;font:13px/1.5 Consolas,"Cascadia Mono",monospace}
+pre code{background:none;padding:0;font-size:inherit}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface);margin:0 0 14px}
+table{border-collapse:collapse;width:100%;font-size:14px} th,td{text-align:left;vertical-align:top;padding:8px 11px;border-bottom:1px solid var(--line)}
+th{background:var(--surface2);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)} tr:last-child td{border-bottom:0}
+hr{border:0;border-top:1px solid var(--line);margin:24px 0}
+footer{margin-top:40px;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="MSys_TB12_00_MASTER_PLAN.html">MSys TB12 – Master Plan delle classi</a><a href="MSys_TB12_Cls01_LOG.html">MSys_TB12_Cls01_LOG</a><a href="MSys_TB12_Cls02_FILE.html" class="att">MSys_TB12_Cls02_FILE</a><a href="MSys_TB12_Cls03_DATABASE.html">MSys_TB12_Cls03_DATABASE</a><a href="MSys_TB12_Cls04_OGGETTI.html">MSys_TB12_Cls04_OGGETTI</a></nav>
+<h1 id="msys-tb12-cls02-file">MSys_TB12_Cls02_FILE</h1>
+<p>File e cartelle con le <strong>API Windows Unicode</strong> a 32 e 64 bit. Gestisce percorsi fino a 32.767 caratteri con il prefisso <code>\\?\</code>, attributi, dimensioni, date, elenchi, apertura con l&#x27;applicazione predefinita e finestre di selezione.</p>
+<p>File: <code>OBJECT\CLASSI\MSys_TB12_Cls02_FILE.cls</code> · Dipendenze: nessuna · Esempi: <code>ESEMPI\MSys_TB12_Cls02_FILE_ESEMPI.txt</code></p>
+<h2 id="percorsi-oltre-260-caratteri">Percorsi oltre 260 caratteri</h2>
+<p>Le API classiche di Windows e <code>FileSystemObject</code> si fermano a 260 caratteri (<code>MAX_PATH</code>). Questa classe:</p>
+<ul><li>trasforma ogni percorso assoluto in <code>\\?\C:\...</code> (o <code>\\?\UNC\server\...</code> per la rete) con <code>NormalizzaPercorso</code>;</li><li>chiama solo funzioni Unicode <code>...W</code> passando le stringhe con <code>StrPtr</code>;</li><li>dichiara le API due volte con la compilazione condizionale: <code>#If VBA7</code> (<code>PtrSafe</code>, <code>LongPtr</code>, Office 2010 e successivi a 32 o 64 bit) e <code>#Else</code> (Office 2007 e precedenti);</li><li>per aprire con la shell oltre 260 caratteri usa il nome breve 8.3 (<code>PercorsoBreve</code>).</li></ul>
+<p>Provato: cartella di 317 caratteri creata in un colpo solo, file di 332 caratteri copiato, letto, spostato ed eliminato.</p>
+<h2 id="metodi">Metodi</h2>
+<div class="tbl"><table><thead><tr><th>Metodo</th><th>Restituisce</th><th>Cosa fa</th><th>Sezione</th></tr></thead><tbody><tr><td><code>FileEsiste(percorso)</code></td><td>Boolean</td><td>il file esiste (non una cartella)</td><td>#03.01#</td></tr><tr><td><code>CartellaEsiste(percorso)</code></td><td>Boolean</td><td>la cartella esiste</td><td>#03.02#</td></tr><tr><td><code>IsLongPath(percorso)</code></td><td>Boolean</td><td>oltre 260 caratteri</td><td>#03.03#</td></tr><tr><td><code>NormalizzaPercorso(percorso)</code></td><td>String</td><td>percorso con <code>\\?\</code></td><td>#04.01#</td></tr><tr><td><code>PercorsoSenzaPrefisso(percorso)</code></td><td>String</td><td>toglie <code>\\?\</code></td><td>#04.02#</td></tr><tr><td><code>PercorsoBreve(percorso)</code></td><td>String</td><td>nome breve 8.3</td><td>#04.03#</td></tr><tr><td><code>GetFileName</code>, <code>GetFolderPath</code>, <code>GetFileExtension</code>, <code>UnisciPercorso</code></td><td>String</td><td>parti del percorso (solo testo)</td><td>#04.04#</td></tr><tr><td><code>CreaCartella(percorso)</code></td><td>Boolean</td><td>crea anche le cartelle intermedie</td><td>#05.01#</td></tr><tr><td><code>EliminaCartella(percorso, [forzata])</code></td><td>Boolean</td><td>con <code>forzata = True</code> anche il contenuto</td><td>#05.02#</td></tr><tr><td><code>ElencoFile(cartella, [filtro], [ricorsivo])</code></td><td>Collection</td><td>percorsi dei file</td><td>#05.03#</td></tr><tr><td><code>ElencoCartelle(cartella, [filtro], [ricorsivo])</code></td><td>Collection</td><td>percorsi delle sottocartelle</td><td>#05.04#</td></tr><tr><td><code>CopiaFile(origine, destinazione, [sovrascrivi])</code></td><td>Boolean</td><td>destinazione file o cartella; crea le cartelle mancanti</td><td>#06.01#</td></tr><tr><td><code>SpostaFile(origine, destinazione, [sovrascrivi])</code></td><td>Boolean</td><td>sposta o rinomina, anche tra dischi</td><td>#06.02#</td></tr><tr><td><code>EliminaFile(percorso)</code></td><td>Boolean</td><td>anche se in sola lettura</td><td>#06.03#</td></tr><tr><td><code>AttributiFile</code>, <code>AttributiTesto</code></td><td>Long, String</td><td>attributi (-1 se inesistente)</td><td>#07.01#</td></tr><tr><td><code>DimensioneFile</code>, <code>GetFileSizeFormatted</code></td><td>Double, String</td><td>dimensione oltre 2 GB</td><td>#07.02#</td></tr><tr><td><code>DataCreazione</code>, <code>DataModifica</code>, <code>DataUltimoAccesso</code></td><td>Date</td><td>ora locale</td><td>#07.03#</td></tr><tr><td><code>ProprietaFile(percorso)</code></td><td>String</td><td>scheda proprietà in testo</td><td>#07.04#</td></tr><tr><td><code>MostraProprietaFile(percorso)</code></td><td>–</td><td>scheda in una finestra</td><td>#07.05#</td></tr><tr><td><code>ApriFile(percorso)</code>, <code>ApriCartella(percorso)</code></td><td>Boolean</td><td>applicazione predefinita / Esplora file</td><td>#08#</td></tr><tr><td><code>SelezionaFile</code>, <code>SelezionaFileMultipli</code>, <code>SelezionaCartella</code>, <code>SalvaFile</code></td><td>String / Collection</td><td>finestre di dialogo (<code>Application.FileDialog</code>)</td><td>#09#</td></tr></tbody></table></div>
+<p>I nomi pubblici della versione precedente sono rimasti uguali: il codice che li usava funziona ancora.</p>
+<h2 id="propriet">Proprietà</h2>
+<p><code>CartellaLog</code>, <code>LogAttivo</code> (predefinito <code>True</code>), <code>LogDettagliato</code> (predefinito <code>False</code>: solo esiti ed errori), <code>UltimoErrore</code> (sola lettura).</p>
+<h2 id="log">Log</h2>
+<p><code>&lt;cartella del database&gt;\Logs\MSys_TB12_Cls02_FILE_AAAA_MM_GG.txt</code>. Per gli errori di Windows la riga riporta il codice, per esempio <code>errore Windows 80</code> (il file esiste già), <code>5</code> (accesso negato), <code>145</code> (cartella non vuota), <code>3</code> (percorso non trovato).</p>
+<h2 id="indice-delle-sezioni">Indice delle sezioni</h2>
+<ul><li><code>#01#</code> IMPOSTAZIONI: <code>#01.01#</code> costanti, <code>#01.02#</code> strutture API, <code>#01.03#</code> API per VBA7, <code>#01.04#</code> API per VBA6, <code>#01.05#</code> variabili</li><li><code>#02#</code> CICLO_DI_VITA_E_PROPRIETA</li><li><code>#03#</code> VERIFICHE: <code>#03.01#</code> FileEsiste, <code>#03.02#</code> CartellaEsiste (<code>.01</code> vuoto, <code>.02</code> attributi, <code>.03</code> esito), <code>#03.03#</code> IsLongPath</li><li><code>#04#</code> PERCORSI: <code>#04.01#</code> normalizzazione (<code>.01</code> pulizia, <code>.02</code> UNC, <code>.03</code> unità), <code>#04.02#</code>, <code>#04.03#</code> percorso breve, <code>#04.04#</code> parti</li><li><code>#05#</code> CARTELLE: <code>#05.01#</code> crea (<code>.01</code> esiste, <code>.02</code> radice, <code>.03</code> livelli, <code>.04</code> esito), <code>#05.02#</code> elimina, <code>#05.03#</code> file, <code>#05.04#</code> cartelle</li><li><code>#06#</code> FILE: <code>#06.01#</code> copia, <code>#06.02#</code> sposta, <code>#06.03#</code> elimina (<code>.01</code> controlli, <code>.02</code> sola lettura, <code>.03</code> API)</li><li><code>#07#</code> ATTRIBUTI_E_PROPRIETA · <code>#08#</code> APERTURA · <code>#09#</code> FINESTRE_DI_DIALOGO</li><li><code>#90#</code> LOG_INTERNO · <code>#91#</code> SUPPORTO: <code>#91.01#</code> attributi, <code>#91.02#</code> date, <code>#91.03#</code> nome da ricerca, <code>#91.04#</code> dimensione, <code>#91.05#</code> scansione, <code>#91.06#</code> svuotamento ricorsivo</li></ul>
+<footer>Pagina generata da STRUMENTI\md2html.py a partire dal file .md con lo stesso nome: per modificarla cambia il .md e lancia GENERA_HTML.bat.</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+2026-11-14 23:33:40 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: ImportaOggetto | Pos: 05.01.03 | Esito: OK     | QUERY zz_TEST_Q_OGG -> zz_TEST_Q_IMPORTATA da C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_OGGETTI.mdb
+2026-11-14 23:33:40 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: ImportaOggetto | Pos: 05.01.02 | Esito: AVVISO | QUERY zz_TEST_Q_IMPORTATA esiste gia': non importato
+2026-11-14 23:33:40 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: EsportaOggetto | Pos: 05.02.02 | Esito: OK     | QUERY zz_TEST_Q_IMPORTATA -> zz_TEST_Q_ESPORTATA in C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_OGGETTI.mdb
+2026-11-14 23:33:40 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: AccodaOggetti | Pos: 05.03.01 | Esito: INIZIO | 1 oggetti TABLE zz_TEST_T_* da C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_OGGETTI.mdb
+2026-11-14 23:33:40 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: ImportaOggetto | Pos: 05.01.03 | Esito: OK     | TABLE zz_TEST_T_OGG da C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_OGGETTI.mdb
+2026-11-14 23:33:40 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: AccodaOggetti | Pos: 05.03.03 | Esito: OK     | importati 1, non importati 0
+2026-11-14 23:33:40 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: AccodaElencoInTabella | Pos: 06.01.03 | Esito: OK     | TEST_TB12: aggiunti 5, gia' presenti 0 in zz_TEST_ELENCO
+2026-11-14 23:33:40 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: AccodaElencoInTabella | Pos: 06.01.03 | Esito: OK     | TEST_TB12: aggiunti 0, gia' presenti 5 in zz_TEST_ELENCO
+2026-11-14 23:33:40 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: AccodaElencoInTabella | Pos: 06.01.01 | Esito: ERRORE | tabella o campi mancanti: zz_TABELLA_INESISTENTE (COD_PROGETTO_s, TIPOGGETTO_s, NOMEOGGETTO_s)
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: ImportaOggetto | Pos: 05.01.03 | Esito: OK     | QUERY zz_TEST_Q_OGG -> zz_TEST_Q_IMPORTATA da C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_OGGETTI.mdb
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: ImportaOggetto | Pos: 05.01.02 | Esito: AVVISO | QUERY zz_TEST_Q_IMPORTATA esiste gia': non importato
+2026-11-14 23:34:19 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: EsportaOggetto | Pos: 05.02.02 | Esito: OK     | QUERY zz_TEST_Q_IMPORTATA -> zz_TEST_Q_ESPORTATA in C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_OGGETTI.mdb
+2026-11-14 23:34:19 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: AccodaOggetti | Pos: 05.03.01 | Esito: INIZIO | 1 oggetti TABLE zz_TEST_T_* da C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_OGGETTI.mdb
+2026-11-14 23:34:19 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: ImportaOggetto | Pos: 05.01.03 | Esito: OK     | TABLE zz_TEST_T_OGG da C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_OGGETTI.mdb
+2026-11-14 23:34:19 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: AccodaOggetti | Pos: 05.03.03 | Esito: OK     | importati 1, non importati 0
+2026-11-14 23:34:19 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: AccodaElencoInTabella | Pos: 06.01.03 | Esito: OK     | TEST_TB12: aggiunti 4, gia' presenti 0 in zz_TEST_ELENCO
+2026-11-14 23:34:19 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: AccodaElencoInTabella | Pos: 06.01.03 | Esito: OK     | TEST_TB12: aggiunti 0, gia' presenti 4 in zz_TEST_ELENCO
+2026-11-14 23:34:19 | Classe: MSys_TB12_Cls04_OGGETTI | Funzione: AccodaElencoInTabella | Pos: 06.01.01 | Esito: ERRORE | tabella o campi mancanti: zz_TABELLA_INESISTENTE (COD_PROGETTO_s, TIPOGGETTO_s, NOMEOGGETTO_s)

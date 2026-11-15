@@ -1,0 +1,156 @@
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 02.00    | Esito: ------ | ========== TEST DELLE CLASSI MSys_TB12 - 14/11/2026 23:33 ==========
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.00    | Esito: INIZIO | MSys_TB12_Cls01_LOG
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.01.01 | Esito: OK     | Cls01 crea la cartella dei log
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.01.02 | Esito: OK     | Cls01 file INFO del giorno
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.02.01 | Esito: OK     | Cls01 file ERRORI del giorno
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.02.02 | Esito: OK     | Cls01 UltimoErrore riporta la posizione #03.02.01#
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.02.03 | Esito: OK     | Cls01 righe: 4 in INFO, 1 in ERRORI
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.03.01 | Esito: OK     | Cls01 file personalizzato
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.04.01 | Esito: OK     | Cls01 DimensioneLog > 0
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.04.02 | Esito: OK     | Cls01 PulisciLog elimina i 3 file di prova
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.04.03 | Esito: OK     | Cls01 cartella vuota dopo la pulizia
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.99    | Esito: FINE   | MSys_TB12_Cls01_LOG
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.00    | Esito: INIZIO | MSys_TB12_Cls02_FILE
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.01.01 | Esito: OK     | Cls02 CreaCartella di prova
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.02.01 | Esito: OK     | Cls02 IsLongPath su 317 caratteri
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.02.02 | Esito: OK     | Cls02 CreaCartella percorso lungo (6 livelli)
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.02.03 | Esito: OK     | Cls02 CartellaEsiste percorso lungo
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.02.04 | Esito: OK     | Cls02 FileEsiste su una cartella = False
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.03.01 | Esito: OK     | Cls02 FileEsiste percorso corto
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.03.02 | Esito: OK     | Cls02 CopiaFile nel percorso lungo
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.03.03 | Esito: OK     | Cls02 FileEsiste percorso lungo (332 caratteri)
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.03.04 | Esito: OK     | Cls02 CopiaFile senza sovrascrivere un file esistente = False (riga ERRORE voluta)
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.04.01 | Esito: OK     | Cls02 DimensioneFile = FileLen del seme
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.04.02 | Esito: OK     | Cls02 DataModifica di oggi
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.04.03 | Esito: OK     | Cls02 AttributiTesto contiene Archivio
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.04.04 | Esito: OK     | Cls02 ProprietaFile segnala il percorso lungo
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.04.05 | Esito: OK     | Cls02 GetFileName, GetFileExtension, GetFolderPath
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.04.06 | Esito: OK     | Cls02 GetFileSizeFormatted in bytes
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.05.01 | Esito: OK     | Cls02 ElencoFile *.txt nel percorso lungo = 1
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.05.02 | Esito: OK     | Cls02 ElencoCartelle ricorsivo = 6 livelli
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.05.03 | Esito: OK     | Cls02 ElencoFile ricorsivo = 2
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.06.01 | Esito: OK     | Cls02 SpostaFile (rinomina) nel percorso lungo
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.06.02 | Esito: OK     | Cls02 dopo lo spostamento l'origine non c'e' piu'
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.06.03 | Esito: OK     | Cls02 EliminaFile su file in sola lettura
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.06.04 | Esito: OK     | Cls02 EliminaCartella non vuota senza forzare = False (riga ERRORE voluta)
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.07.01 | Esito: OK     | Cls02 EliminaCartella forzata con il percorso lungo dentro
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.07.02 | Esito: OK     | Cls02 cartella di prova eliminata
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.07.03 | Esito: OK     | Cls02 NormalizzaPercorso locale e di rete
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.07.04 | Esito: OK     | Cls02 PercorsoBreve di %ProgramFiles%
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.99    | Esito: FINE   | MSys_TB12_Cls02_FILE
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.00    | Esito: INIZIO | MSys_TB12_Cls03_DATABASE
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.01.01 | Esito: OK     | Cls03 Apri database esterno
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.02.01 | Esito: OK     | Cls03 EseguiSQL CREATE TABLE
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.02.02 | Esito: OK     | Cls03 EseguiSQL tre INSERT
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.02.03 | Esito: OK     | Cls03 ContaRecord = 3
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.02.04 | Esito: OK     | Cls03 ContaRecord con criterio = 1
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.02.05 | Esito: OK     | Cls03 ValoreSQL somma = 6
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.02.06 | Esito: OK     | Cls03 TabellaEsiste e CampoEsiste
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.02.07 | Esito: OK     | Cls03 EseguiSQL errato = False (riga ERRORE voluta)
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.03.01 | Esito: OK     | Cls03 QueryEsiste
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.03.02 | Esito: OK     | Cls03 EseguiQuery su 3 record
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.03.03 | Esito: OK     | Cls03 EseguiElencoQuery con una query mancante = False
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.03.04 | Esito: OK     | Cls03 UltimoReport: 1 eseguita
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.04.01 | Esito: OK     | Cls03 AnnullaTransazione: i 3 record ci sono ancora
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.05.01 | Esito: OK     | Cls03 CollegaTabella
+2026-11-14 23:33:39 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.05.02 | Esito: OK     | Cls03 tabella collegata leggibile (3 record)
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.05.03 | Esito: OK     | Cls03 RicollegaTabelle verso il secondo database = 1
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.05.04 | Esito: OK     | Cls03 dopo il ricollegamento la tabella e' quella vuota (0 record)
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.05.05 | Esito: OK     | Cls03 ElencoCollegamenti punta al secondo database
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.06.01 | Esito: OK     | Cls03 CompattaDatabase
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.99    | Esito: FINE   | MSys_TB12_Cls03_DATABASE
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.00    | Esito: INIZIO | MSys_TB12_Cls04_OGGETTI
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.01.01 | Esito: KO     | Cls04 le 4 classi MSys_TB12_Cls0* nel database corrente
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.01.02 | Esito: OK     | Cls04 OggettoEsiste modulo di test
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.01.03 | Esito: OK     | Cls04 TipoAccess FORMS = acForm e tipo sconosciuto = -1
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.02.01 | Esito: OK     | Cls04 ElencoOggetti esterno: 1 tabella e 1 query
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.03.01 | Esito: OK     | Cls04 ImportaOggetto query con nuovo nome
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.03.02 | Esito: OK     | Cls04 la query importata esiste
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.03.03 | Esito: OK     | Cls04 seconda importazione senza sovrascrivere = False (riga AVVISO voluta)
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.03.04 | Esito: OK     | Cls04 EsportaOggetto nel database di prova
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.03.05 | Esito: OK     | Cls04 la query esportata esiste nel database di prova
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.04.01 | Esito: OK     | Cls04 AccodaOggetti tabelle zz_TEST_T_* = 1
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.04.02 | Esito: OK     | Cls04 tabella importata con i dati (2 righe)
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.05.01 | Esito: KO     | Cls04 AccodaElencoInTabella: 4 classi aggiunte
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.05.02 | Esito: OK     | Cls04 seconda volta: nessun doppione
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.05.03 | Esito: OK     | Cls04 tabella di inventario mancante = -1 (riga ERRORE voluta)
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.99    | Esito: FINE   | MSys_TB12_Cls04_OGGETTI
+2026-11-14 23:33:40 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 02.99    | Esito: ERRORE | VERIFICHE: 68 - OK: 66 - KO: 2 ->  #06.01.01# #06.05.01#
+2026-11-14 23:34:17 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 02.00    | Esito: ------ | ========== TEST DELLE CLASSI MSys_TB12 - 14/11/2026 23:34 ==========
+2026-11-14 23:34:17 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.00    | Esito: INIZIO | MSys_TB12_Cls01_LOG
+2026-11-14 23:34:17 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.01.01 | Esito: OK     | Cls01 crea la cartella dei log
+2026-11-14 23:34:17 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.01.02 | Esito: OK     | Cls01 file INFO del giorno
+2026-11-14 23:34:17 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.02.01 | Esito: OK     | Cls01 file ERRORI del giorno
+2026-11-14 23:34:17 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.02.02 | Esito: OK     | Cls01 UltimoErrore riporta la posizione #03.02.01#
+2026-11-14 23:34:17 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.02.03 | Esito: OK     | Cls01 righe: 4 in INFO, 1 in ERRORI
+2026-11-14 23:34:17 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.03.01 | Esito: OK     | Cls01 file personalizzato
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.04.01 | Esito: OK     | Cls01 DimensioneLog > 0
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.04.02 | Esito: OK     | Cls01 PulisciLog elimina i 3 file di prova
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.04.03 | Esito: OK     | Cls01 cartella vuota dopo la pulizia
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 03.99    | Esito: FINE   | MSys_TB12_Cls01_LOG
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.00    | Esito: INIZIO | MSys_TB12_Cls02_FILE
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.01.01 | Esito: OK     | Cls02 CreaCartella di prova
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.02.01 | Esito: OK     | Cls02 IsLongPath su 317 caratteri
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.02.02 | Esito: OK     | Cls02 CreaCartella percorso lungo (6 livelli)
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.02.03 | Esito: OK     | Cls02 CartellaEsiste percorso lungo
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.02.04 | Esito: OK     | Cls02 FileEsiste su una cartella = False
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.03.01 | Esito: OK     | Cls02 FileEsiste percorso corto
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.03.02 | Esito: OK     | Cls02 CopiaFile nel percorso lungo
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.03.03 | Esito: OK     | Cls02 FileEsiste percorso lungo (332 caratteri)
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.03.04 | Esito: OK     | Cls02 CopiaFile senza sovrascrivere un file esistente = False (riga ERRORE voluta)
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.04.01 | Esito: OK     | Cls02 DimensioneFile = FileLen del seme
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.04.02 | Esito: OK     | Cls02 DataModifica di oggi
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.04.03 | Esito: OK     | Cls02 AttributiTesto contiene Archivio
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.04.04 | Esito: OK     | Cls02 ProprietaFile segnala il percorso lungo
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.04.05 | Esito: OK     | Cls02 GetFileName, GetFileExtension, GetFolderPath
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.04.06 | Esito: OK     | Cls02 GetFileSizeFormatted in bytes
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.05.01 | Esito: OK     | Cls02 ElencoFile *.txt nel percorso lungo = 1
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.05.02 | Esito: OK     | Cls02 ElencoCartelle ricorsivo = 6 livelli
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.05.03 | Esito: OK     | Cls02 ElencoFile ricorsivo = 2
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.06.01 | Esito: OK     | Cls02 SpostaFile (rinomina) nel percorso lungo
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.06.02 | Esito: OK     | Cls02 dopo lo spostamento l'origine non c'e' piu'
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.06.03 | Esito: OK     | Cls02 EliminaFile su file in sola lettura
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.06.04 | Esito: OK     | Cls02 EliminaCartella non vuota senza forzare = False (riga ERRORE voluta)
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.07.01 | Esito: OK     | Cls02 EliminaCartella forzata con il percorso lungo dentro
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.07.02 | Esito: OK     | Cls02 cartella di prova eliminata
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.07.03 | Esito: OK     | Cls02 NormalizzaPercorso locale e di rete
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.07.04 | Esito: OK     | Cls02 PercorsoBreve di %ProgramFiles%
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 04.99    | Esito: FINE   | MSys_TB12_Cls02_FILE
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.00    | Esito: INIZIO | MSys_TB12_Cls03_DATABASE
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.01.01 | Esito: OK     | Cls03 Apri database esterno
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.02.01 | Esito: OK     | Cls03 EseguiSQL CREATE TABLE
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.02.02 | Esito: OK     | Cls03 EseguiSQL tre INSERT
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.02.03 | Esito: OK     | Cls03 ContaRecord = 3
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.02.04 | Esito: OK     | Cls03 ContaRecord con criterio = 1
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.02.05 | Esito: OK     | Cls03 ValoreSQL somma = 6
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.02.06 | Esito: OK     | Cls03 TabellaEsiste e CampoEsiste
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.02.07 | Esito: OK     | Cls03 EseguiSQL errato = False (riga ERRORE voluta)
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.03.01 | Esito: OK     | Cls03 QueryEsiste
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.03.02 | Esito: OK     | Cls03 EseguiQuery su 3 record
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.03.03 | Esito: OK     | Cls03 EseguiElencoQuery con una query mancante = False
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.03.04 | Esito: OK     | Cls03 UltimoReport: 1 eseguita
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.04.01 | Esito: OK     | Cls03 AnnullaTransazione: i 3 record ci sono ancora
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.05.01 | Esito: OK     | Cls03 CollegaTabella
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.05.02 | Esito: OK     | Cls03 tabella collegata leggibile (3 record)
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.05.03 | Esito: OK     | Cls03 RicollegaTabelle verso il secondo database = 1
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.05.04 | Esito: OK     | Cls03 dopo il ricollegamento la tabella e' quella vuota (0 record)
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.05.05 | Esito: OK     | Cls03 ElencoCollegamenti punta al secondo database
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.06.01 | Esito: OK     | Cls03 CompattaDatabase
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 05.99    | Esito: FINE   | MSys_TB12_Cls03_DATABASE
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.00    | Esito: INIZIO | MSys_TB12_Cls04_OGGETTI
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.01.01 | Esito: OK     | Cls04 le 4 classi MSys_TB12_Cls01..04 nel database corrente (escluso il separatore Cls00)
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.01.02 | Esito: OK     | Cls04 OggettoEsiste modulo di test
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.01.03 | Esito: OK     | Cls04 TipoAccess FORMS = acForm e tipo sconosciuto = -1
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.02.01 | Esito: OK     | Cls04 ElencoOggetti esterno: 1 tabella e 1 query
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.03.01 | Esito: OK     | Cls04 ImportaOggetto query con nuovo nome
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.03.02 | Esito: OK     | Cls04 la query importata esiste
+2026-11-14 23:34:18 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.03.03 | Esito: OK     | Cls04 seconda importazione senza sovrascrivere = False (riga AVVISO voluta)
+2026-11-14 23:34:19 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.03.04 | Esito: OK     | Cls04 EsportaOggetto nel database di prova
+2026-11-14 23:34:19 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.03.05 | Esito: OK     | Cls04 la query esportata esiste nel database di prova
+2026-11-14 23:34:19 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.04.01 | Esito: OK     | Cls04 AccodaOggetti tabelle zz_TEST_T_* = 1
+2026-11-14 23:34:19 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.04.02 | Esito: OK     | Cls04 tabella importata con i dati (2 righe)
+2026-11-14 23:34:19 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.05.01 | Esito: OK     | Cls04 AccodaElencoInTabella: 4 classi aggiunte
+2026-11-14 23:34:19 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.05.02 | Esito: OK     | Cls04 seconda volta: nessun doppione
+2026-11-14 23:34:19 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.05.03 | Esito: OK     | Cls04 tabella di inventario mancante = -1 (riga ERRORE voluta)
+2026-11-14 23:34:19 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 06.99    | Esito: FINE   | MSys_TB12_Cls04_OGGETTI
+2026-11-14 23:34:19 | Modulo: MSys_TB12_Mdl01_TEST | Pos: 02.99    | Esito: FINE   | VERIFICHE: 68 - OK: 68 - KO: 0

@@ -1,0 +1,582 @@
+
+################################################################
+### INIZIO  07/11/2026  17:55:12
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [17:55:12]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+    ESITO: OK
+
+=== 1) STATUS   [17:55:12]
+    COMANDO: git status -s
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [17:55:13]
+    COMANDO: git add -A
+    ESITO: OK
+
+=== 2b) COMMIT
+    Nessuna modifica locale da salvare: commit non necessario.
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [17:55:13]
+    COMANDO: git fetch origin
+    ESITO: OK
+
+=== 3) PULL da GitHub   [17:55:14]
+    COMANDO: git pull --no-edit
+Already up to date.
+    ESITO: OK
+
+=== 4) PUSH su GitHub   [17:55:15]
+    COMANDO: git push
+Everything up-to-date
+    ESITO: OK
+
+=== 5) STATO FINALE   [17:55:16]
+    COMANDO: git status -sb
+## main...origin/main
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  07/11/2026  17:55:16
+################################################################
+
+################################################################
+### INIZIO  07/11/2026  18:01:42
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [18:01:42]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+    ESITO: OK
+
+=== 1) STATUS   [18:01:42]
+    COMANDO: git status -s
+ M ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [18:01:42]
+    COMANDO: git add -A
+    ESITO: OK
+
+=== 2b) COMMIT   [18:01:42]
+    COMANDO: git commit -m "2026_11_07_H18_M01_S42_aggiornamento_MSYS"
+[main 1d1c995] 2026_11_07_H18_M01_S42_aggiornamento_MSYS
+ 1 file changed, 71 insertions(+), 81 deletions(-)
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [18:01:42]
+    COMANDO: git fetch origin
+    ESITO: OK
+
+=== 3) PULL da GitHub   [18:01:43]
+    COMANDO: git pull --no-edit
+
+################################################################
+### INIZIO  07/11/2026  18:03:23
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [18:03:23]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+    ESITO: OK
+
+=== 1) STATUS   [18:03:23]
+    COMANDO: git status -s
+ M ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [18:03:23]
+    COMANDO: git add -A
+    ESITO: OK
+
+=== 2b) COMMIT   [18:03:23]
+    COMANDO: git commit -m "2026_11_07_H18_M03_S23_aggiornamento_MSYS"
+[main 6ec6171] 2026_11_07_H18_M03_S23_aggiornamento_MSYS
+ 1 file changed, 80 insertions(+), 70 deletions(-)
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [18:03:23]
+    COMANDO: git fetch origin
+    ESITO: OK
+
+=== 3) PULL da GitHub   [18:03:24]
+    COMANDO: git pull --no-edit
+Already up to date.
+    ESITO: OK
+
+=== 4) PUSH su GitHub   [18:03:25]
+    COMANDO: git push
+To https://github.com/icivixwalter/Msys_TB12_FILES.git
+   5ba8756..6ec6171  main -> main
+    ESITO: OK
+
+=== 5) STATO FINALE   [18:03:28]
+    COMANDO: git status -sb
+## main...origin/main
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  07/11/2026  18:03:28
+################################################################
+
+################################################################
+### INIZIO  07/11/2026  18:06:33
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [18:06:33]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+    ESITO: OK
+
+=== 1) STATUS   [18:06:33]
+    COMANDO: git status -s
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [18:06:33]
+    COMANDO: git add -A
+    ESITO: OK
+
+=== 2b) COMMIT
+    Nessuna modifica locale da salvare: commit non necessario.
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [18:06:33]
+    COMANDO: git fetch origin
+    ESITO: OK
+
+=== 3) PULL da GitHub   [18:06:34]
+    COMANDO: git pull --no-edit
+Already up to date.
+    ESITO: OK
+
+=== 4) PUSH su GitHub   [18:06:35]
+    COMANDO: git push
+Everything up-to-date
+    ESITO: OK
+
+=== 5) STATO FINALE   [18:06:37]
+    COMANDO: git status -sb
+## main...origin/main
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  07/11/2026  18:06:37
+################################################################
+
+################################################################
+### INIZIO  07/11/2026  18:09:45
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [18:09:45]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+    ESITO: OK
+
+=== 1) STATUS   [18:09:45]
+    COMANDO: git status -s
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [18:09:45]
+    COMANDO: git add -A
+    ESITO: OK
+
+=== 2b) COMMIT
+    Nessuna modifica locale da salvare: commit non necessario.
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [18:09:45]
+    COMANDO: git fetch origin
+    ESITO: OK
+    Su GitHub main e' SVUOTATO (commit 10452b2aca68f2a2a277b476a6e422153aafa669)
+    RIPARTENZA DA ZERO: nuovo PRIMO COMMIT con i file attuali della cartella
+
+=== 2d) COPIA DI SICUREZZA della storia del PC   [18:09:47]
+    COMANDO: git clone --mirror "C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES" "c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\AA_BACKUP_GITHUB\2026_11_07_H18_M09_S45_SalvataggioGit_PRIMA_RIPARTENZA.git"
+Cloning into bare repository 'c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\AA_BACKUP_GITHUB\2026_11_07_H18_M09_S45_SalvataggioGit_PRIMA_RIPARTENZA.git'...
+done.
+    ESITO: OK
+    PRIMO COMMIT creato: c06f20f078ac59b8da67b8eed85966d66843dac2
+
+=== 4) PUSH su GitHub (PRIMO COMMIT al posto di main svuotato)   [18:09:47]
+    COMANDO: git push "--force-with-lease=refs/heads/main:10452b2aca68f2a2a277b476a6e422153aafa669" origin c06f20f078ac59b8da67b8eed85966d66843dac2:refs/heads/main
+To https://github.com/icivixwalter/Msys_TB12_FILES.git
+ + 10452b2...c06f20f c06f20f078ac59b8da67b8eed85966d66843dac2 -> main (forced update)
+    ESITO: OK
+
+=== 4b) il main del PC riparte dal PRIMO COMMIT (i file non cambiano)   [18:09:50]
+    COMANDO: git reset --soft c06f20f078ac59b8da67b8eed85966d66843dac2
+    ESITO: OK
+
+=== 5) STATO FINALE   [18:09:51]
+    COMANDO: git status -sb
+## main...origin/main
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  07/11/2026  18:09:51
+################################################################
+
+################################################################
+### INIZIO  07/11/2026  18:14:50
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [18:14:50]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+    ESITO: OK
+
+=== 1) STATUS   [18:14:50]
+    COMANDO: git status -s
+ M ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [18:14:50]
+    COMANDO: git add -A
+    ESITO: OK
+
+=== 2b) COMMIT   [18:14:50]
+    COMANDO: git commit -m "2026_11_07_H18_M14_S49_aggiornamento_MSYS"
+[main 96b049d] 2026_11_07_H18_M14_S49_aggiornamento_MSYS
+ 1 file changed, 42 insertions(+), 122 deletions(-)
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [18:14:50]
+    COMANDO: git fetch origin
+    ESITO: OK
+    Su GitHub main e' SVUOTATO (commit b5bba6c9574ee9f7ff6c094f2955c8df3abde2b9)
+    RIPARTENZA DA ZERO: nuovo PRIMO COMMIT con i file attuali della cartella
+
+=== 2d) COPIA DI SICUREZZA della storia del PC   [18:14:51]
+    COMANDO: git clone --mirror "C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES" "c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\AA_BACKUP_GITHUB\2026_11_07_H18_M14_S49_SalvataggioGit_PRIMA_RIPARTENZA.git"
+Cloning into bare repository 'c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\AA_BACKUP_GITHUB\2026_11_07_H18_M14_S49_SalvataggioGit_PRIMA_RIPARTENZA.git'...
+done.
+    ESITO: OK
+    PRIMO COMMIT creato: 5569ea4f919ba732826f232cb386f852cb1286b4
+
+=== 4) PUSH su GitHub (PRIMO COMMIT al posto di main svuotato)   [18:14:52]
+    COMANDO: git push "--force-with-lease=refs/heads/main:b5bba6c9574ee9f7ff6c094f2955c8df3abde2b9" origin 5569ea4f919ba732826f232cb386f852cb1286b4:refs/heads/main
+To https://github.com/icivixwalter/Msys_TB12_FILES.git
+ + b5bba6c...5569ea4 5569ea4f919ba732826f232cb386f852cb1286b4 -> main (forced update)
+    ESITO: OK
+
+=== 4b) il main del PC riparte dal PRIMO COMMIT (i file non cambiano)   [18:14:55]
+    COMANDO: git reset --soft 5569ea4f919ba732826f232cb386f852cb1286b4
+    ESITO: OK
+
+=== 5) STATO FINALE   [18:14:56]
+    COMANDO: git status -sb
+## main...origin/main
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  07/11/2026  18:14:56
+################################################################
+
+################################################################
+### INIZIO  08/11/2026  15:16:17
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [15:16:17]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+    ESITO: OK
+
+=== 1) STATUS   [15:16:17]
+    COMANDO: git status -s
+ M Project_Msys_TB12_FILES_BASE.sublime-project
+ M Project_Msys_TB12_FILES_BASE.sublime-workspace
+ M README_Msys_TB12_FILES_BASE.md
+ M ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
+ M ZIP_7ZIP_INCREMENTALE_{CRIPTA+DECODIFICA_INTERNO}.BAT
+?? README_CARTELLE_MSYS.md
+?? README_CLASSI_PROGETTO.MD
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [15:16:17]
+    COMANDO: git add -A
+warning: in the working copy of 'Project_Msys_TB12_FILES_BASE.sublime-workspace', LF will be replaced by CRLF the next time Git touches it
+    ESITO: OK
+
+=== 2b) COMMIT   [15:16:17]
+    COMANDO: git commit -m "2026_11_08_H15_M16_S17_aggiornamento_MSYS"
+[main b9f6dc6] 2026_11_08_H15_M16_S17_aggiornamento_MSYS
+ 7 files changed, 1420 insertions(+), 262 deletions(-)
+ create mode 100644 README_CARTELLE_MSYS.md
+ create mode 100644 README_CLASSI_PROGETTO.MD
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [15:16:18]
+    COMANDO: git fetch origin
+    ESITO: OK
+
+=== 3) PULL da GitHub   [15:16:19]
+    COMANDO: git pull --no-edit
+Already up to date.
+    ESITO: OK
+
+=== 4) PUSH su GitHub   [15:16:20]
+    COMANDO: git push
+To https://github.com/icivixwalter/Msys_TB12_FILES.git
+   5569ea4..b9f6dc6  main -> main
+    ESITO: OK
+
+=== 5) STATO FINALE   [15:16:22]
+    COMANDO: git status -sb
+## main...origin/main
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  08/11/2026  15:16:22
+################################################################
+
+################################################################
+### INIZIO  08/11/2026  21:33:32
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [21:33:32]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+    ESITO: OK
+
+=== 1) STATUS   [21:33:32]
+    COMANDO: git status -s
+ D MDB/GE_MSys_DF02.mdb
+ D MDB/MSys_DF02.mdb
+ M Project_Msys_TB12_FILES_BASE.sublime-project
+ M Project_Msys_TB12_FILES_BASE.sublime-workspace
+ D README.md
+ M README_CARTELLE_MSYS.md
+ M README_Msys_TB12_FILES_BASE.md
+ M ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
+ M ZIP_7ZIP_INCREMENTALE_{CRIPTA+DECODIFICA_INTERNO}.BAT
+ M Zip_N70_ElencoFile.txt
+ M git_OpenGitHub.bat
+?? MDB/GE_Msys_TB12_FILES.mdb
+?? MDB/Msys_TB12_FILES.mdb
+?? Zip_N70_CREA_ElencoFile.bat
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [21:33:32]
+    COMANDO: git add -A
+warning: in the working copy of 'Project_Msys_TB12_FILES_BASE.sublime-workspace', LF will be replaced by CRLF the next time Git touches it
+    ESITO: OK
+
+=== 2b) COMMIT   [21:33:32]
+    COMANDO: git commit -m "2026_11_08_H21_M33_S32_aggiornamento_MSYS"
+[main ea5ebb7] 2026_11_08_H21_M33_S32_aggiornamento_MSYS
+ 12 files changed, 226 insertions(+), 146 deletions(-)
+ rename MDB/{GE_MSys_DF02.mdb => GE_Msys_TB12_FILES.mdb} (100%)
+ rename MDB/{MSys_DF02.mdb => Msys_TB12_FILES.mdb} (100%)
+ delete mode 100644 README.md
+ create mode 100644 Zip_N70_CREA_ElencoFile.bat
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [21:33:32]
+    COMANDO: git fetch origin
+    ESITO: OK
+    Su GitHub main e' SVUOTATO (commit 10e2d9f19f6ba6e92f06df26b09108c4a16b2cb0)
+    RIPARTENZA DA ZERO: nuovo PRIMO COMMIT con i file attuali della cartella
+
+=== 2d) COPIA DI SICUREZZA della storia del PC   [21:33:33]
+    COMANDO: git clone --mirror "C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES" "c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\AA_BACKUP_GITHUB\2026_11_08_H21_M33_S32_SalvataggioGit_PRIMA_RIPARTENZA.git"
+Cloning into bare repository 'c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\AA_BACKUP_GITHUB\2026_11_08_H21_M33_S32_SalvataggioGit_PRIMA_RIPARTENZA.git'...
+done.
+    ESITO: OK
+    PRIMO COMMIT creato: da19f6724caf8d369ef5a1b5d9800c82f1d44383
+
+=== 4) PUSH su GitHub (PRIMO COMMIT al posto di main svuotato)   [21:33:34]
+    COMANDO: git push "--force-with-lease=refs/heads/main:10e2d9f19f6ba6e92f06df26b09108c4a16b2cb0" origin da19f6724caf8d369ef5a1b5d9800c82f1d44383:refs/heads/main
+To https://github.com/icivixwalter/Msys_TB12_FILES.git
+ + 10e2d9f...da19f67 da19f6724caf8d369ef5a1b5d9800c82f1d44383 -> main (forced update)
+    ESITO: OK
+
+=== 4b) il main del PC riparte dal PRIMO COMMIT (i file non cambiano)   [21:33:38]
+    COMANDO: git reset --soft da19f6724caf8d369ef5a1b5d9800c82f1d44383
+    ESITO: OK
+
+=== 5) STATO FINALE   [21:33:39]
+    COMANDO: git status -sb
+## main...origin/main
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  08/11/2026  21:33:39
+################################################################
+
+################################################################
+### INIZIO  08/11/2026  21:39:17
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [21:39:17]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+    ESITO: OK
+
+=== 1) STATUS   [21:39:17]
+    COMANDO: git status -s
+ M Project_Msys_TB12_FILES_BASE.sublime-workspace
+ M git_PULL.BAT
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [21:39:18]
+    COMANDO: git add -A
+warning: in the working copy of 'Project_Msys_TB12_FILES_BASE.sublime-workspace', LF will be replaced by CRLF the next time Git touches it
+    ESITO: OK
+
+=== 2b) COMMIT   [21:39:18]
+    COMANDO: git commit -m "2026_11_08_H21_M39_S17_aggiornamento_MSYS"
+[main e0d5a76] 2026_11_08_H21_M39_S17_aggiornamento_MSYS
+ 2 files changed, 56 insertions(+), 4 deletions(-)
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [21:39:18]
+    COMANDO: git fetch origin
+    ESITO: OK
+
+=== 3) PULL da GitHub   [21:39:19]
+    COMANDO: git pull --no-edit
+Already up to date.
+    ESITO: OK
+
+=== 4) PUSH su GitHub   [21:39:20]
+    COMANDO: git push
+To https://github.com/icivixwalter/Msys_TB12_FILES.git
+   da19f67..e0d5a76  main -> main
+    ESITO: OK
+
+=== 5) STATO FINALE   [21:39:22]
+    COMANDO: git status -sb
+## main...origin/main
+ M ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  08/11/2026  21:39:22
+################################################################
+
+################################################################
+### INIZIO  08/11/2026  21:45:00
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [21:45:00]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+    ESITO: OK
+
+=== 1) STATUS   [21:45:00]
+    COMANDO: git status -s
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [21:45:00]
+    COMANDO: git add -A
+    ESITO: OK
+
+=== 2b) COMMIT
+    Nessuna modifica locale da salvare: commit non necessario.
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [21:45:00]
+    COMANDO: git fetch origin
+    ESITO: OK
+
+=== 3) PULL da GitHub   [21:45:01]
+    COMANDO: git pull --no-edit
+Already up to date.
+    ESITO: OK
+
+=== 4) PUSH su GitHub   [21:45:02]
+    COMANDO: git push
+To https://github.com/icivixwalter/Msys_TB12_FILES.git
+   e0d5a76..5da1ee6  main -> main
+    ESITO: OK
+
+=== 5) STATO FINALE   [21:45:05]
+    COMANDO: git status -sb
+## main...origin/main
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  08/11/2026  21:45:05
+################################################################
+
+################################################################
+### INIZIO  15/11/2026   8:01:56
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [ 8:01:56]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+    ESITO: OK
+
+=== 1) STATUS   [ 8:01:56]
+    COMANDO: git status -s
+?? 00_DOC_MASTER_PLAN/
+?? AA__________________________________________________________________________AA.txt
+?? MDB/
+?? MSYS_N02________________________________________________________________MSYS.txt
+?? OBJECT/
+?? Project_Msys_TB12_FILES.sublime-project
+?? Project_Msys_TB12_FILES.sublime-workspace
+?? README_CARTELLE_MSYS.md
+?? README_CLASSI_PROGETTO.MD
+?? README_MSYS_DF00_BASE.md
+?? ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
+?? ZIP_7ZIP_INCREMENTALE_{CRIPTA+DECODIFICA_INTERNO}.BAT
+?? ZIP_7ZIP_________________________________________________________________ZZ.txt
+?? ZZ________________________________________________________________________ZZ.txt
+?? Zip_N70_CREA_ElencoFile.bat
+?? Zip_N70_CRIPTA.bat
+?? Zip_N70_DECODIFICA.bat
+?? Zip_N70_ElencoFile.txt
+?? Zip_N70_ElencoFileESCLUSI.txt
+?? Zip_N70____________________________________________CRIPTA_DECODIFICA.txt
+?? git_CANCELLA_TUTTI_I_DATI_IN_GITHUB.BAT
+?? git_COMMIT.BAT
+?? git_CREATE_GITHUB.BAT
+?? git_CREA_SALVATAGGIO.BAT
+?? git_LOG.txt
+?? git_OPEN_OVERLEAF.BAT
+?? git_OpenGitHub.bat
+?? git_PULL.BAT
+?? git_PUSH.BAT
+?? git_RICOSTRUISCI_GITHUB.BAT
+?? git_STATUS+PULL+ADD+COMMIT+PUSH.BAT
+?? git_STATUS.BAT
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [ 8:01:56]
+    COMANDO: git add -A

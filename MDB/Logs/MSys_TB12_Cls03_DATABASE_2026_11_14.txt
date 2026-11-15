@@ -1,0 +1,36 @@
+2026-11-14 23:33:39 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: Apri | Pos: 03.01.03 | Esito: OK     | esterno: C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_DB.mdb
+2026-11-14 23:33:39 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiSQL | Pos: 05.01.02 | Esito: OK     | 0 record: CREATE TABLE T_PROVA (ID COUNTER CONSTRAINT PK_T_PROVA PRIMARY KEY, NOME TEXT(50), VALORE LONG)
+2026-11-14 23:33:39 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiSQL | Pos: 05.01.02 | Esito: OK     | 1 record: INSERT INTO T_PROVA (NOME, VALORE) VALUES ('A', 1)
+2026-11-14 23:33:39 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiSQL | Pos: 05.01.02 | Esito: OK     | 1 record: INSERT INTO T_PROVA (NOME, VALORE) VALUES ('B', 2)
+2026-11-14 23:33:39 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiSQL | Pos: 05.01.02 | Esito: OK     | 1 record: INSERT INTO T_PROVA (NOME, VALORE) VALUES ('C', 3)
+2026-11-14 23:33:39 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiSQL | Pos: 05.01.02 | Esito: ERRORE | errore 3078: Impossibile trovare la tabella o la query di input 'TABELLA_INESISTENTE'. Verificare che esista e che il nome sia stato digitato correttamente. [UPDATE TABELLA_INESISTENTE SET X = 1] -> codice fermo a #05.01.02#
+2026-11-14 23:33:39 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiQuery | Pos: 05.02.03 | Esito: OK     | Q_PROVA_AGGIORNA - 3 record
+2026-11-14 23:33:39 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiElencoQuery | Pos: 07.01.01 | Esito: INIZIO | 2 query da eseguire
+2026-11-14 23:33:39 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiQuery | Pos: 05.02.03 | Esito: OK     | Q_PROVA_AGGIORNA - 3 record
+2026-11-14 23:33:39 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiQuery | Pos: 05.02.01 | Esito: AVVISO | query inesistente: Q_NON_ESISTE
+2026-11-14 23:33:39 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiElencoQuery | Pos: 07.01.03 | Esito: AVVISO | eseguite 1, non eseguite 1
+2026-11-14 23:33:39 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: IniziaTransazione | Pos: 08.01    | Esito: OK     | transazione aperta
+2026-11-14 23:33:39 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiSQL | Pos: 05.01.02 | Esito: OK     | 3 record: DELETE FROM T_PROVA
+2026-11-14 23:33:39 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: AnnullaTransazione | Pos: 08.03    | Esito: OK     | modifiche annullate
+2026-11-14 23:33:39 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: Apri | Pos: 03.01.02 | Esito: OK     | corrente: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\MDB\Msys_TB12_FILES.mdb
+2026-11-14 23:33:39 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: CollegaTabella | Pos: 09.01.02 | Esito: OK     | zz_TEST_LINK_T_PROVA -> C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_DB.mdb [T_PROVA]
+2026-11-14 23:33:40 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: RicollegaTabelle | Pos: 09.02.02 | Esito: OK     | 1 collegamenti aggiornati verso C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_DB2.mdb
+2026-11-14 23:33:40 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: CompattaDatabase | Pos: 10.01    | Esito: OK     | C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_COMPATTATO.mdb.src.mdb -> C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_COMPATTATO.mdb
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: Apri | Pos: 03.01.03 | Esito: OK     | esterno: C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_DB.mdb
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiSQL | Pos: 05.01.02 | Esito: OK     | 0 record: CREATE TABLE T_PROVA (ID COUNTER CONSTRAINT PK_T_PROVA PRIMARY KEY, NOME TEXT(50), VALORE LONG)
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiSQL | Pos: 05.01.02 | Esito: OK     | 1 record: INSERT INTO T_PROVA (NOME, VALORE) VALUES ('A', 1)
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiSQL | Pos: 05.01.02 | Esito: OK     | 1 record: INSERT INTO T_PROVA (NOME, VALORE) VALUES ('B', 2)
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiSQL | Pos: 05.01.02 | Esito: OK     | 1 record: INSERT INTO T_PROVA (NOME, VALORE) VALUES ('C', 3)
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiSQL | Pos: 05.01.02 | Esito: ERRORE | errore 3078: Impossibile trovare la tabella o la query di input 'TABELLA_INESISTENTE'. Verificare che esista e che il nome sia stato digitato correttamente. [UPDATE TABELLA_INESISTENTE SET X = 1] -> codice fermo a #05.01.02#
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiQuery | Pos: 05.02.03 | Esito: OK     | Q_PROVA_AGGIORNA - 3 record
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiElencoQuery | Pos: 07.01.01 | Esito: INIZIO | 2 query da eseguire
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiQuery | Pos: 05.02.03 | Esito: OK     | Q_PROVA_AGGIORNA - 3 record
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiQuery | Pos: 05.02.01 | Esito: AVVISO | query inesistente: Q_NON_ESISTE
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiElencoQuery | Pos: 07.01.03 | Esito: AVVISO | eseguite 1, non eseguite 1
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: IniziaTransazione | Pos: 08.01    | Esito: OK     | transazione aperta
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: EseguiSQL | Pos: 05.01.02 | Esito: OK     | 3 record: DELETE FROM T_PROVA
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: AnnullaTransazione | Pos: 08.03    | Esito: OK     | modifiche annullate
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: Apri | Pos: 03.01.02 | Esito: OK     | corrente: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\MDB\Msys_TB12_FILES.mdb
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: CollegaTabella | Pos: 09.01.02 | Esito: OK     | zz_TEST_LINK_T_PROVA -> C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_DB.mdb [T_PROVA]
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: RicollegaTabelle | Pos: 09.02.02 | Esito: OK     | 1 collegamenti aggiornati verso C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_DB2.mdb
+2026-11-14 23:34:18 | Classe: MSys_TB12_Cls03_DATABASE | Funzione: CompattaDatabase | Pos: 10.01    | Esito: OK     | C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_COMPATTATO.mdb.src.mdb -> C:\Users\giaco\AppData\Local\Temp\MSys_TB12_TEST_COMPATTATO.mdb

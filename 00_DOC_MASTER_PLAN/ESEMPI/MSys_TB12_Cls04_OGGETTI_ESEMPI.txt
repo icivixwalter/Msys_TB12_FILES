@@ -1,0 +1,53 @@
+'==================================================================================================
+' ESEMPI DI UTILIZZO - MSys_TB12_Cls04_OGGETTI
+' Importa prima la classe: Editor VBA > File > Importa file... > OBJECT\CLASSI\MSys_TB12_Cls04_OGGETTI.cls
+' Serve il riferimento DAO. Tipi: TABLE, QUERY, FORMS, REPORTS, MACRO, MODULI, TUTTI
+' Log: <cartella del database>\Logs\MSys_TB12_Cls04_OGGETTI_AAAA_MM_GG.txt
+'==================================================================================================
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 1 - elenco degli oggetti di un database esterno (chiave di estrazione del Master Plan)
+'--------------------------------------------------------------------------------------------------
+Public Sub ESEMPIO_OGG_01_Elenco()
+Dim og As New MSys_TB12_Cls04_OGGETTI, v As Variant, sDb_s As String
+    sDb_s = "C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB40\MDB\GE_MSys_TB40.mdb"
+    For Each v In og.ElencoOggetti("TUTTI", "MSys_TB40_*", sDb_s)
+        Debug.Print v                                  ' es. QUERY|MSys_TB40_Qry02_01_SEL_PAGINE
+    Next v
+    Debug.Print og.ContaOggetti("QUERY", "MSys_????_Qry##_##_UPD_*") & " query di aggiornamento nel database corrente"
+End Sub
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 2 - portare nel database corrente gli oggetti di un mini-progetto (form e query)
+'--------------------------------------------------------------------------------------------------
+Public Sub ESEMPIO_OGG_02_AccodaDaMiniProgetto()
+Dim og As New MSys_TB12_Cls04_OGGETTI, sDb_s As String, n As Long
+    sDb_s = "C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB40\MDB\GE_MSys_TB40.mdb"
+    n = og.AccodaOggetti(sDb_s, "QUERY", "MSys_TB40_*")          ' non sovrascrive quelli gia' presenti
+    n = n + og.AccodaOggetti(sDb_s, "FORMS", "MSys_TB40_Frm*")
+    MsgBox n & " oggetti importati. Dettagli nel log della classe.", vbInformation
+End Sub
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 3 - un solo oggetto, con un nuovo nome e sovrascrittura
+'--------------------------------------------------------------------------------------------------
+Public Sub ESEMPIO_OGG_03_UnOggetto()
+Dim og As New MSys_TB12_Cls04_OGGETTI
+    If Not og.ImportaOggetto("C:\...\Sorgente.mdb", "FORMS", "Frm_Origine", "Frm_Copia", True) Then
+        MsgBox og.UltimoErrore, vbExclamation
+    End If
+    ' e al contrario, dal database corrente verso un altro:
+    ' og.EsportaOggetto "C:\...\Destinazione.mdb", "MODULI", "MSys_TB12_Cls02_FILE"
+End Sub
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 4 - inventario: scrivere gli oggetti nella tabella del mini-progetto TB03 (senza doppioni)
+'--------------------------------------------------------------------------------------------------
+Public Sub ESEMPIO_OGG_04_Inventario()
+Dim og As New MSys_TB12_Cls04_OGGETTI, n As Long
+    ' tabella predefinita: Msys_TB03_ELENCO_ObjProgetti (locale o collegata)
+    ' campi predefiniti:   COD_PROGETTO_s, TIPOGGETTO_s, NOMEOGGETTO_s, DATAINS_d
+    ' per un'altra tabella: og.TabellaElenco = "MiaTabella": og.CampoNome = "NOME" ...
+    n = og.AccodaElencoInTabella("MSys", vbNullString, "TUTTI", "MSys_*")
+    If n < 0 Then MsgBox og.UltimoErrore, vbExclamation Else Debug.Print n & " righe aggiunte"
+End Sub

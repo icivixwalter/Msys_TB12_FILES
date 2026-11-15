@@ -1,0 +1,73 @@
+'==================================================================================================
+' ESEMPI DI UTILIZZO - MSys_TB12_Cls01_LOG
+' Importa prima la classe: Editor VBA > File > Importa file... > OBJECT\CLASSI\MSys_TB12_Cls01_LOG.cls
+' I log finiscono in <cartella del database>\Logs\<NomeBase>_ERRORI_AAAA_MM_GG.txt e _INFO_...
+'==================================================================================================
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 1 - procedura con posizione nel codice e gestione dell'errore
+'--------------------------------------------------------------------------------------------------
+Public Sub ESEMPIO_LOG_01_ProceduraConPosizione()
+Dim lg As New MSys_TB12_Cls01_LOG
+Dim sPos_s As String
+On Error GoTo ERRORE
+    lg.NomeBase = "MIO_MODULO"            ' file: Logs\MIO_MODULO_INFO_AAAA_MM_GG.txt
+    lg.Origine = "MIO_MODULO"
+    lg.Separatore "ESEMPIO 1"
+
+    '//#01.01# = primo passo
+    sPos_s = "01.01"
+    lg.Scrivi "ESEMPIO_LOG_01", sPos_s, "INIZIO", "leggo i dati"
+
+    '//#01.02# = secondo passo: errore voluto (divisione per zero)
+    sPos_s = "01.02"
+    Debug.Print 1 / 0
+
+    lg.Scrivi "ESEMPIO_LOG_01", sPos_s, "OK", "non arriva qui"
+    Exit Sub
+ERRORE:
+    ' scrive nel file ERRORI e nel file INFO: "... | Pos: 01.02 | Esito: ERRORE | errore 11: ... -> codice fermo a #01.02#"
+    lg.ScriviErrore "ESEMPIO_LOG_01", sPos_s, Err.Number, Err.Description
+    MsgBox "Errore al punto #" & sPos_s & "#: " & Err.Description & vbCrLf & lg.UltimoErrore, vbExclamation
+End Sub
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 2 - logger condiviso da tutta una form
+'--------------------------------------------------------------------------------------------------
+' Nella sezione dichiarazioni della form:
+'     Private m_Log As MSys_TB12_Cls01_LOG
+'
+' Private Sub Form_Load()
+'     Set m_Log = New MSys_TB12_Cls01_LOG
+'     m_Log.NomeBase = Me.Name
+'     m_Log.Origine = Me.Name
+'     m_Log.Scrivi "Form_Load", "02.01", "OK", "form aperta"
+' End Sub
+'
+' Private Sub Form_Unload(Cancel As Integer)
+'     m_Log.Scrivi "Form_Unload", "02.02", "INFO", "form chiusa"
+'     Set m_Log = Nothing
+' End Sub
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 3 - compatibilita' con il codice scritto per la vecchia clsLogger
+'--------------------------------------------------------------------------------------------------
+Public Sub ESEMPIO_LOG_03_Compatibile()
+Dim lg As New MSys_TB12_Cls01_LOG
+    lg.ScriviInfo "ESEMPIO_LOG_03", "messaggio informativo"
+    lg.ScriviLogEvento "ESEMPIO_LOG_03", "stesso effetto di ScriviInfo"
+    lg.ScriviLogErrore "ESEMPIO_LOG_03", 999, "errore di prova", 0
+    lg.ScriviLogPersonalizzato "ESEMPIO_LOG_03", "riga in un file a parte", "Importazioni.txt"
+End Sub
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 4 - manutenzione: quanto occupano i log, quante righe, pulizia oltre 60 giorni
+'--------------------------------------------------------------------------------------------------
+Public Sub ESEMPIO_LOG_04_Manutenzione()
+Dim lg As New MSys_TB12_Cls01_LOG
+    Debug.Print "Cartella log : " & lg.CartellaLogs
+    Debug.Print "Dimensione   : " & Format$(lg.DimensioneLog("*.txt") / 1024, "#,##0") & " KB"
+    Debug.Print "Righe        : " & lg.ContaRigheLog("*.txt")
+    Debug.Print "Eliminati    : " & lg.PulisciLog(60, "*.txt") & " file piu' vecchi di 60 giorni"
+    lg.VisualizzaLog "INFO"          ' apre il log INFO di oggi
+End Sub

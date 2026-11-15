@@ -1,0 +1,72 @@
+'==================================================================================================
+' ESEMPI DI UTILIZZO - MSys_TB12_Cls02_FILE
+' Importa prima la classe: Editor VBA > File > Importa file... > OBJECT\CLASSI\MSys_TB12_Cls02_FILE.cls
+' Funziona su Office a 32 e 64 bit; i percorsi possono superare i 260 caratteri.
+' Log: <cartella del database>\Logs\MSys_TB12_Cls02_FILE_AAAA_MM_GG.txt
+'==================================================================================================
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 1 - scegliere un file, vederne le proprieta' e aprirlo
+'--------------------------------------------------------------------------------------------------
+Public Sub ESEMPIO_FILE_01_SceltaEApertura()
+Dim fs As New MSys_TB12_Cls02_FILE, sFile_s As String
+    sFile_s = fs.SelezionaFile("Documenti PDF (*.pdf)", "*.pdf", CurrentProject.Path, "Scegli un PDF")
+    If Len(sFile_s) = 0 Then Exit Sub                       ' annullato
+    Debug.Print fs.ProprietaFile(sFile_s)                    ' nome, dimensione, date, attributi
+    If Not fs.ApriFile(sFile_s) Then MsgBox "Non aperto: " & fs.UltimoErrore, vbExclamation
+End Sub
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 2 - cartella oltre 260 caratteri: creare, copiare dentro, aprire in Esplora file
+'--------------------------------------------------------------------------------------------------
+Public Sub ESEMPIO_FILE_02_PercorsoLungo()
+Dim fs As New MSys_TB12_Cls02_FILE, sCart_s As String, i As Integer
+    sCart_s = Environ$("TEMP") & "\ESEMPIO_PERCORSO_LUNGO"
+    For i = 1 To 6
+        sCart_s = sCart_s & "\LIVELLO_" & i & "_NOME_DI_CARTELLA_MOLTO_LUNGO_PER_LA_PROVA"
+    Next i
+    Debug.Print "Lunghezza: " & Len(sCart_s) & " - percorso lungo: " & fs.IsLongPath(sCart_s)
+    If fs.CreaCartella(sCart_s) Then                         ' crea anche tutte le intermedie
+        fs.CopiaFile CurrentProject.FullName, sCart_s        ' destinazione cartella: mantiene il nome
+        Debug.Print fs.ElencoFile(sCart_s).Count & " file nella cartella lunga"
+        fs.ApriCartella sCart_s                              ' oltre 260 caratteri usa il nome breve 8.3
+    End If
+    ' pulizia:  fs.EliminaCartella Environ$("TEMP") & "\ESEMPIO_PERCORSO_LUNGO", True
+End Sub
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 3 - tutti i database di una cartella e delle sottocartelle, con dimensione e data
+'--------------------------------------------------------------------------------------------------
+Public Sub ESEMPIO_FILE_03_ElencoDatabase()
+Dim fs As New MSys_TB12_Cls02_FILE, v As Variant, sCart_s As String
+    sCart_s = fs.SelezionaCartella(CurrentProject.Path, "Cartella da esaminare")
+    If Len(sCart_s) = 0 Then Exit Sub
+    For Each v In fs.ElencoFile(sCart_s, "*.mdb", True)
+        Debug.Print Format$(fs.DataModifica(v), "dd/mm/yyyy hh:nn"), fs.GetFileSizeFormatted(v), v
+    Next v
+End Sub
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 4 - copia di sicurezza datata di un file, con controllo dell'esito
+'--------------------------------------------------------------------------------------------------
+Public Function ESEMPIO_FILE_04_CopiaDatata(ByVal sFile_s As String) As Boolean
+Dim fs As New MSys_TB12_Cls02_FILE, sDest_s As String
+    sDest_s = fs.UnisciPercorso(fs.GetFolderPath(sFile_s), "AA_SALVATAGGI") & "\" & _
+              Format$(Now, "yyyy_mm_dd_hh_nn_") & fs.GetFileName(sFile_s)
+    ESEMPIO_FILE_04_CopiaDatata = fs.CopiaFile(sFile_s, sDest_s, False)   ' crea AA_SALVATAGGI se manca
+    If Not ESEMPIO_FILE_04_CopiaDatata Then Debug.Print "Copia fallita: " & fs.UltimoErrore
+End Function
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 5 - piu' file scelti insieme, poi spostati in un'altra cartella
+'--------------------------------------------------------------------------------------------------
+Public Sub ESEMPIO_FILE_05_SpostaPiuFile()
+Dim fs As New MSys_TB12_Cls02_FILE, c As Collection, v As Variant, sDest_s As String
+    Set c = fs.SelezionaFileMultipli(, , CurrentProject.Path, "Scegli i file da spostare")
+    If c.Count = 0 Then Exit Sub
+    sDest_s = fs.SelezionaCartella(, "Cartella di destinazione")
+    If Len(sDest_s) = 0 Then Exit Sub
+    For Each v In c
+        If Not fs.SpostaFile(v, sDest_s) Then Debug.Print "Non spostato: " & v & " - " & fs.UltimoErrore
+    Next v
+End Sub

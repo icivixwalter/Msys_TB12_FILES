@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MSys_TB12 – Master Plan delle classi</title>
+<style>
+:root{--bg:#f4f5f7;--surface:#fff;--surface2:#eceff3;--fg:#1a202b;--muted:#5b6474;--line:#d6dbe3;--accent:#962c3b;--code:#eef1f5}
+@media (prefers-color-scheme:dark){:root{--bg:#11151c;--surface:#181e27;--surface2:#202834;--fg:#e2e6ed;--muted:#98a2b3;--line:#2b3340;--accent:#e57c8b;--code:#202834;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 "Segoe UI",system-ui,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:28px max(16px,env(safe-area-inset-left)) 64px}
+nav{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:24px}
+nav a{color:var(--muted);text-decoration:none} nav a.att{color:var(--accent);font-weight:600}
+h1{font-size:30px;line-height:1.2;margin:8px 0 12px} h2{font-size:21px;margin:34px 0 10px;padding-top:12px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:22px 0 8px} h1,h2,h3{text-wrap:balance}
+p{margin:0 0 12px;max-width:80ch} ul,ol{margin:0 0 12px;padding-left:22px} li{margin:3px 0}
+a{color:var(--accent)}
+code{font-family:Consolas,"Cascadia Mono",monospace;font-size:.88em;background:var(--code);padding:1px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px;overflow-x:auto;font:13px/1.5 Consolas,"Cascadia Mono",monospace}
+pre code{background:none;padding:0;font-size:inherit}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface);margin:0 0 14px}
+table{border-collapse:collapse;width:100%;font-size:14px} th,td{text-align:left;vertical-align:top;padding:8px 11px;border-bottom:1px solid var(--line)}
+th{background:var(--surface2);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)} tr:last-child td{border-bottom:0}
+hr{border:0;border-top:1px solid var(--line);margin:24px 0}
+footer{margin-top:40px;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="MSys_TB12_00_MASTER_PLAN.html" class="att">MSys TB12 – Master Plan delle classi</a><a href="MSys_TB12_Cls01_LOG.html">MSys_TB12_Cls01_LOG</a><a href="MSys_TB12_Cls02_FILE.html">MSys_TB12_Cls02_FILE</a><a href="MSys_TB12_Cls03_DATABASE.html">MSys_TB12_Cls03_DATABASE</a><a href="MSys_TB12_Cls04_OGGETTI.html">MSys_TB12_Cls04_OGGETTI</a></nav>
+<h1 id="msys-tb12-master-plan-delle-classi">MSys_TB12 – Master Plan delle classi</h1>
+<p>Mini-progetto <strong>TB12_FILES</strong> del super-progetto MSys: quattro classi indipendenti per gestire file e cartelle, log, database e oggetti di Access. Ogni classe si importa da sola in qualsiasi progetto Access (32 o 64 bit) e scrive il proprio log nella sottocartella <code>Logs</code> del database.</p>
+<p>Aggiornato il 15/11/2026. Test automatici: <strong>68 verifiche, 68 superate</strong>.</p>
+<h2 id="le-quattro-classi">Le quattro classi</h2>
+<div class="tbl"><table><thead><tr><th>Classe</th><th>Cosa fa</th><th>Sostituisce</th></tr></thead><tbody><tr><td><code>MSys_TB12_Cls01_LOG</code></td><td>log per il codice applicativo: errori con la posizione nel codice, messaggi, file personalizzati, pulizia</td><td><code>Msys_TB12_FILES_CLASSE_clsLogger</code>, <code>CLASSE_clsLogger</code></td></tr><tr><td><code>MSys_TB12_Cls02_FILE</code></td><td>file e cartelle con API Windows Unicode a 32 e 64 bit, percorsi oltre 260 caratteri, attributi, date, elenchi, apertura, finestre di selezione</td><td><code>Msys_TB12_FILES_CLASSE_clsFileSystem</code>, <code>CLASSE_clsFileSystem</code></td></tr><tr><td><code>MSys_TB12_Cls03_DATABASE</code></td><td>database corrente o esterno: recordset, SQL, query singole o in elenco, transazioni, tabelle collegate, compattazione</td><td><code>Msys_TB12_FILES_CLASSE_clsDatabase</code>, <code>Msys_TB12_FILES_CLASSE_ClsManager</code>, <code>CLASSE_ClsManager</code></td></tr><tr><td><code>MSys_TB12_Cls04_OGGETTI</code></td><td>oggetti di Access tra database: elenco, esistenza, importazione, esportazione, accodamento di gruppo, inventario in tabella</td><td><code>Msys_TB12_FILES_CLASSE_clsDBInspector</code>, <code>CLASSE_CLASSE_clsDBInspector</code></td></tr><tr><td><code>MSys_TB12_Mdl01_TEST</code></td><td>modulo di test unico per le quattro classi</td><td><code>CLSModulo_GESTIONE_OGGETTI_TEST_TutteLeClassi</code>, <code>TEST_clsFileSystem</code></td></tr></tbody></table></div>
+<p>Le versioni precedenti sono state tolte dal database e salvate in testo in <code>OBJECT\CLASSI_PRECEDENTI_2026_11_14_23_26_43\</code>.</p>
+<h2 id="come-si-collegano">Come si collegano</h2>
+<pre><code>                 codice dell&#x27;applicazione (form, moduli)
+                    |          |            |            |
+                    v          v            v            v
+          Cls01_LOG   Cls02_FILE   Cls03_DATABASE   Cls04_OGGETTI      &lt;- nessuna dipende dalle altre
+                    \          |            |            /
+                     \         |            |           /
+                      v        v            v          v
+                 &lt;cartella del database&gt;\Logs\
+                   MSys_TB12_Cls01_LOG_ERRORI_AAAA_MM_GG.txt  (o &lt;NomeBase&gt;_ERRORI_...)
+                   MSys_TB12_Cls02_FILE_AAAA_MM_GG.txt
+                   MSys_TB12_Cls03_DATABASE_AAAA_MM_GG.txt
+                   MSys_TB12_Cls04_OGGETTI_AAAA_MM_GG.txt
+                   MSys_TB12_Mdl01_TEST_AAAA_MM_GG.txt</code></pre>
+<p>Le classi sono <strong>indipendenti</strong>: ognuna ha il proprio log interno, quindi in un altro progetto si può importare anche una sola classe. La <code>Cls01_LOG</code> serve al codice dell&#x27;applicazione, non alle altre classi.</p>
+<h2 id="regole-comuni-a-tutte-le-classi">Regole comuni a tutte le classi</h2>
+<ul><li><strong>Nomi</strong>: <code>MSys_TB12_Cls##_DESCRIZIONE</code>, secondo la grammatica del Master Plan MSys (progetto, mini-progetto, tipo e numero, descrizione).</li><li><strong>Indice in testata</strong>: ogni classe elenca sezioni <code>#SS#</code>, paragrafi <code>#SS.PP#</code> e sottoparagrafi <code>#SS.PP.ss#</code> con una descrizione breve. Nel codice ogni punto ha la stessa etichetta: si trova con Ctrl+F.</li><li><strong>Log</strong>: una riga per evento, identica in <code>Debug.Print</code> e nel file: <code>2026-11-15 10:30:12 | Classe: MSys_TB12_Cls02_FILE | Funzione: CopiaFile | Pos: 06.01.03 | Esito: ERRORE | copia non riuscita (errore Windows 80): ...</code></li><li><strong>Esiti</strong>: <code>INIZIO</code>, <code>OK</code>, <code>INFO</code>, <code>AVVISO</code>, <code>ERRORE</code>, <code>FINE</code>.</li><li><strong>Posizione dell&#x27;errore</strong>: ogni procedura aggiorna la posizione corrente; in caso di errore il log scrive <code>codice fermo a #SS.PP.ss#</code> e la proprietà <code>UltimoErrore</code> la riporta al chiamante.</li><li><strong>Livello di dettaglio</strong>: per impostazione si scrivono gli esiti delle operazioni e tutti gli errori. Con <code>LogDettagliato = True</code> si scrive anche ogni passo intermedio.</li><li><strong>Cartella Logs</strong>: creata automaticamente se manca. Si può cambiare con la proprietà <code>CartellaLog</code>.</li></ul>
+<h2 id="struttura-della-cartella">Struttura della cartella</h2>
+<pre><code>Msys_TB12_FILES\
+├─ 00_DOC_MASTER_PLAN\        questo documento e una scheda per classe (.md e .html)
+│  ├─ ESEMPI\                 un file .txt di esempi per ogni classe
+│  └─ STRUMENTI\              GENERA_HTML.bat + md2html.py: rigenera gli .html dai .md
+├─ MDB\
+│  ├─ Msys_TB12_FILES.mdb     classi, modulo di test, form
+│  ├─ Logs\                   log delle classi e dei test
+│  └─ BACKUP_CLAUDE_...\      copia del database prima della modifica
+└─ OBJECT\
+   ├─ CLASSI\                 le 4 classi e il test in .cls/.bas, pronti da importare
+   └─ CLASSI_PRECEDENTI_...\  le classi sostituite, in testo</code></pre>
+<h2 id="difetti-corretti-rispetto-alle-classi-precedenti">Difetti corretti rispetto alle classi precedenti</h2>
+<ol><li><strong>Percorsi lunghi non funzionanti</strong>: la classe FileSystem usava le API ANSI (<code>...A</code>), che non accettano il prefisso <code>\\?\</code>. Ora tutte le API sono Unicode (<code>...W</code>).</li><li><strong>Scrittura fuori memoria</strong>: <code>GetFileAttributesEx</code> riceveva una variabile di 4 byte al posto di una struttura di 36. Ora riceve la struttura <code>WIN32_FILE_ATTRIBUTE_DATA</code> completa.</li><li><strong>Copia, spostamento, eliminazione e creazione oltre 260 caratteri</strong>: passavano da <code>FileSystemObject</code>, che non li supporta. Ora usano <code>CopyFileW</code>, <code>MoveFileExW</code>, <code>DeleteFileW</code>, <code>CreateDirectoryW</code>, <code>RemoveDirectoryW</code>.</li><li><strong>Finestra di selezione a 64 bit</strong>: la struttura <code>OPENFILENAME</code> aveva <code>lCustData</code> come <code>Long</code> e la dimensione calcolata con <code>Len</code>. Ora le finestre usano <code>Application.FileDialog</code>, che funziona a 32 e 64 bit, con selezione multipla e scelta della cartella.</li><li><strong>CreaCartella</strong>: non creava le cartelle intermedie. Ora le crea tutte.</li><li><strong>DBInspector</strong>: eseguiva tre query di accodamento che nel database non esistono. Ora elenca gli oggetti e li scrive direttamente nell&#x27;inventario, senza doppioni.</li><li><strong>Manager</strong>: aveva scritte nel codice 15 query di un altro progetto (PRES3000, LLPP_ATTI). Ora l&#x27;elenco si passa a <code>EseguiElencoQuery</code>.</li><li><strong>Logger</strong>: in caso di errore mostrava un messaggio che bloccava il programma. Ora scrive un file di emergenza in <code>%TEMP%</code> e non si ferma.</li></ol>
+<h2 id="test">Test</h2>
+<ul><li><strong>Automatici</strong>: nella finestra Immediata <code>TEST_TUTTI</code> (oppure <code>TEST_Cls02_FILE</code> per una sola classe). Lavorano in <code>%TEMP%</code> e su oggetti <code>zz_TEST_*</code>, che vengono eliminati alla fine. Il test della classe FILE crea davvero un percorso di 332 caratteri e ci copia, sposta ed elimina file.</li><li><strong>Interattivi</strong>: <code>TEST_INTERATTIVI</code> apre le finestre di selezione, la scheda proprietà e una cartella di oltre 280 caratteri in Esplora file.</li><li><strong>Risultato</strong>: <code>Logs\MSys_TB12_Mdl01_TEST_AAAA_MM_GG.txt</code>, una riga per verifica con la posizione (es. <code>04.02.02</code>) e OK o KO. Nei log delle classi alcune righe <code>ERRORE</code> e <code>AVVISO</code> sono volute: sono i test dei casi di errore.</li></ul>
+<h2 id="come-usare-le-classi-in-un-altro-progetto">Come usare le classi in un altro progetto</h2>
+<ol><li>Nell&#x27;editor VBA del progetto di destinazione: <strong>File › Importa file…</strong> e scegli i <code>.cls</code> in <code>OBJECT\CLASSI\</code>.</li><li>Per <code>Cls03_DATABASE</code> e <code>Cls04_OGGETTI</code> serve il riferimento DAO (<strong>Strumenti › Riferimenti › Microsoft Office … Access database engine Object Library</strong>), presente di norma in ogni database Access.</li><li><strong>Debug › Compila</strong>. Gli esempi pronti sono in <code>00_DOC_MASTER_PLAN\ESEMPI\</code>.</li></ol>
+<h2 id="da-decidere">Da decidere</h2>
+<ul><li>La form <code>fileDialog</code> contiene codice di un altro progetto (Codice Opera LLPP) con proprie API e propri log. Si può collegare a <code>MSys_TB12_Cls02_FILE</code> oppure spostarla nel progetto LLPP.</li><li>La form <code>Msys_TB12_FILES_FrmM01_GESTIONI</code> segue ancora il vecchio schema di nome. Secondo la grammatica diventerebbe <code>MSys_TB12_Frm01_M01_GESTIONI</code>.</li><li><code>AccodaTuttiGliOggetti</code> scrive in <code>Msys_TB03_ELENCO_ObjProgetti</code>: in questo database la tabella non è collegata. Va collegata, oppure si indica un&#x27;altra tabella con la proprietà <code>TabellaElenco</code>.</li></ul>
+<footer>Pagina generata da STRUMENTI\md2html.py a partire dal file .md con lo stesso nome: per modificarla cambia il .md e lancia GENERA_HTML.bat.</footer>
+</div>
+</body>
+</html>

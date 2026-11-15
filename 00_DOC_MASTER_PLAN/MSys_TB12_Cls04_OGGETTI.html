@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MSys_TB12_Cls04_OGGETTI</title>
+<style>
+:root{--bg:#f4f5f7;--surface:#fff;--surface2:#eceff3;--fg:#1a202b;--muted:#5b6474;--line:#d6dbe3;--accent:#962c3b;--code:#eef1f5}
+@media (prefers-color-scheme:dark){:root{--bg:#11151c;--surface:#181e27;--surface2:#202834;--fg:#e2e6ed;--muted:#98a2b3;--line:#2b3340;--accent:#e57c8b;--code:#202834;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 "Segoe UI",system-ui,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:28px max(16px,env(safe-area-inset-left)) 64px}
+nav{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:24px}
+nav a{color:var(--muted);text-decoration:none} nav a.att{color:var(--accent);font-weight:600}
+h1{font-size:30px;line-height:1.2;margin:8px 0 12px} h2{font-size:21px;margin:34px 0 10px;padding-top:12px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:22px 0 8px} h1,h2,h3{text-wrap:balance}
+p{margin:0 0 12px;max-width:80ch} ul,ol{margin:0 0 12px;padding-left:22px} li{margin:3px 0}
+a{color:var(--accent)}
+code{font-family:Consolas,"Cascadia Mono",monospace;font-size:.88em;background:var(--code);padding:1px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px;overflow-x:auto;font:13px/1.5 Consolas,"Cascadia Mono",monospace}
+pre code{background:none;padding:0;font-size:inherit}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface);margin:0 0 14px}
+table{border-collapse:collapse;width:100%;font-size:14px} th,td{text-align:left;vertical-align:top;padding:8px 11px;border-bottom:1px solid var(--line)}
+th{background:var(--surface2);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)} tr:last-child td{border-bottom:0}
+hr{border:0;border-top:1px solid var(--line);margin:24px 0}
+footer{margin-top:40px;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="MSys_TB12_00_MASTER_PLAN.html">MSys TB12 – Master Plan delle classi</a><a href="MSys_TB12_Cls01_LOG.html">MSys_TB12_Cls01_LOG</a><a href="MSys_TB12_Cls02_FILE.html">MSys_TB12_Cls02_FILE</a><a href="MSys_TB12_Cls03_DATABASE.html">MSys_TB12_Cls03_DATABASE</a><a href="MSys_TB12_Cls04_OGGETTI.html" class="att">MSys_TB12_Cls04_OGGETTI</a></nav>
+<h1 id="msys-tb12-cls04-oggetti">MSys_TB12_Cls04_OGGETTI</h1>
+<p>Oggetti di Access tra database: elenco di tabelle, query, form, report, macro e moduli del database corrente o di uno esterno; esistenza; importazione ed esportazione di singoli oggetti o di gruppi; registrazione dell&#x27;elenco in una tabella di inventario, senza doppioni. Sostituisce il vecchio <code>clsDBInspector</code>.</p>
+<p>File: <code>OBJECT\CLASSI\MSys_TB12_Cls04_OGGETTI.cls</code> · Dipendenze: riferimento DAO · Esempi: <code>ESEMPI\MSys_TB12_Cls04_OGGETTI_ESEMPI.txt</code></p>
+<h2 id="tipi-di-oggetto">Tipi di oggetto</h2>
+<p>Gli stessi di <code>MSys_DF02_TIPO_OGGETTO</code>: <code>TABLE</code>, <code>QUERY</code>, <code>FORMS</code>, <code>REPORTS</code>, <code>MACRO</code>, <code>MODULI</code>, più <code>TUTTI</code>. <code>TipoAccess</code> li converte nelle costanti di Access (<code>acTable</code> … <code>acModule</code>).</p>
+<h2 id="metodi">Metodi</h2>
+<div class="tbl"><table><thead><tr><th>Metodo</th><th>Restituisce</th><th>Cosa fa</th><th>Sezione</th></tr></thead><tbody><tr><td><code>ElencoOggetti([tipo], [filtroNome], [percorsoDb], [escludiSistema])</code></td><td>Collection</td><td>voci <code>TIPO|NOME</code>; senza percorso il database corrente</td><td>#03.01#</td></tr><tr><td><code>ContaOggetti([tipo], [filtroNome], [percorsoDb])</code></td><td>Long</td><td>numero di oggetti</td><td>#03.02#</td></tr><tr><td><code>OggettoEsiste(nome, tipo, [percorsoDb])</code></td><td>Boolean</td><td>nome esatto</td><td>#04.01#</td></tr><tr><td><code>ImportaOggetto(sorgente, tipo, nome, [nomeDest], [sovrascrivi])</code></td><td>Boolean</td><td>da un altro database a quello corrente (tabelle con i dati)</td><td>#05.01#</td></tr><tr><td><code>EsportaOggetto(destinazione, tipo, nome, [nomeDest])</code></td><td>Boolean</td><td>dal database corrente a un altro</td><td>#05.02#</td></tr><tr><td><code>AccodaOggetti(sorgente, [tipo], [filtroNome], [sovrascrivi])</code></td><td>Long</td><td>importa un gruppo; quanti importati</td><td>#05.03#</td></tr><tr><td><code>AccodaElencoInTabella(codiceProgetto, [percorsoDb], [tipo], [filtroNome])</code></td><td>Long</td><td>righe aggiunte all&#x27;inventario; -1 se la tabella manca</td><td>#06.01#</td></tr><tr><td><code>AccodaTuttiGliOggetti(codiceProgetto, [mostraReport])</code></td><td>Boolean</td><td>compatibile: tabelle, query e form del database corrente</td><td>#06.02#</td></tr><tr><td><code>TipoAccess(tipo)</code>, <code>TipoValido(tipo)</code></td><td>Long, Boolean</td><td>conversione dei tipi</td><td>#07#</td></tr></tbody></table></div>
+<h2 id="inventario">Inventario</h2>
+<p>Tabella e campi predefiniti sono quelli del mini-progetto TB03, modificabili con le proprietà:</p>
+<div class="tbl"><table><thead><tr><th>Proprietà</th><th>Predefinito</th></tr></thead><tbody><tr><td><code>TabellaElenco</code></td><td><code>Msys_TB03_ELENCO_ObjProgetti</code></td></tr><tr><td><code>CampoProgetto</code></td><td><code>COD_PROGETTO_s</code></td></tr><tr><td><code>CampoTipo</code></td><td><code>TIPOGGETTO_s</code></td></tr><tr><td><code>CampoNome</code></td><td><code>NOMEOGGETTO_s</code></td></tr><tr><td><code>CampoData</code></td><td><code>DATAINS_d</code> (vuoto = non scritto)</td></tr></tbody></table></div>
+<p>La tabella può essere locale o collegata. Una riga già presente (stesso progetto, tipo e nome) non viene ripetuta.</p>
+<h2 id="log">Log</h2>
+<p><code>&lt;cartella del database&gt;\Logs\MSys_TB12_Cls04_OGGETTI_AAAA_MM_GG.txt</code>. Ogni importazione o esportazione è scritta con l&#x27;oggetto e il database; un oggetto già presente e non sovrascritto produce un <code>AVVISO</code>, non un errore.</p>
+<h2 id="indice-delle-sezioni">Indice delle sezioni</h2>
+<ul><li><code>#01#</code> IMPOSTAZIONI · <code>#02#</code> CICLO_DI_VITA_E_PROPRIETA</li><li><code>#03#</code> ELENCO: <code>#03.01#</code> (<code>.01</code> apertura, <code>.02</code> tabelle e query, <code>.03</code> contenitori, <code>.04</code> chiusura), <code>#03.02#</code></li><li><code>#04#</code> ESISTENZA · <code>#05#</code> TRASFERIMENTO: <code>#05.01#</code> (<code>.01</code> controlli, <code>.02</code> esistente, <code>.03</code> importazione), <code>#05.02#</code> (<code>.01</code>, <code>.02</code>), <code>#05.03#</code> (<code>.01</code> elenco, <code>.02</code> importazione, <code>.03</code> esito)</li><li><code>#06#</code> INVENTARIO: <code>#06.01#</code> (<code>.01</code> tabella e campi, <code>.02</code> elenco, <code>.03</code> inserimento), <code>#06.02#</code></li><li><code>#07#</code> CONVERSIONI · <code>#90#</code> LOG_INTERNO</li></ul>
+<footer>Pagina generata da STRUMENTI\md2html.py a partire dal file .md con lo stesso nome: per modificarla cambia il .md e lancia GENERA_HTML.bat.</footer>
+</div>
+</body>
+</html>

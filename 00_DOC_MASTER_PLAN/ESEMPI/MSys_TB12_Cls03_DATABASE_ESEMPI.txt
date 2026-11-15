@@ -1,0 +1,74 @@
+'==================================================================================================
+' ESEMPI DI UTILIZZO - MSys_TB12_Cls03_DATABASE
+' Importa prima la classe: Editor VBA > File > Importa file... > OBJECT\CLASSI\MSys_TB12_Cls03_DATABASE.cls
+' Serve il riferimento DAO (Microsoft Office ... Access database engine Object Library).
+' Log: <cartella del database>\Logs\MSys_TB12_Cls03_DATABASE_AAAA_MM_GG.txt
+'==================================================================================================
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 1 - leggere da un database esterno senza collegarlo
+'--------------------------------------------------------------------------------------------------
+Public Sub ESEMPIO_DB_01_LetturaEsterna()
+Dim dbc As New MSys_TB12_Cls03_DATABASE, rs As DAO.Recordset
+    If Not dbc.Apri("C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB40\MDB\MSys_TB40.mdb", True) Then
+        MsgBox dbc.UltimoErrore, vbExclamation: Exit Sub
+    End If
+    Debug.Print "Progetti: " & dbc.ContaRecord("MSys_TB40_Tb01_PROGETTI")
+    Debug.Print "Progetto attivo: " & dbc.ValoreSQL("SELECT COD_PROGETTO_s FROM MSys_TB40_Tb01_PROGETTI WHERE Scel_b=True", "(nessuno)")
+    Set rs = dbc.ApriRecordset("SELECT COD_PROGETTO_s, DENOM_PROGETTO_s FROM MSys_TB40_Tb01_PROGETTI ORDER BY COD_PROGETTO_s")
+    Do While Not rs.EOF
+        Debug.Print rs!COD_PROGETTO_s, rs!DENOM_PROGETTO_s
+        rs.MoveNext
+    Loop
+    rs.Close
+    dbc.Chiudi
+End Sub
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 2 - elenco di query di aggiornamento (al posto del vecchio ClsManager.AggiornaTuttiIDati)
+'--------------------------------------------------------------------------------------------------
+Public Sub ESEMPIO_DB_02_ElencoQuery()
+Dim dbc As New MSys_TB12_Cls03_DATABASE, el As Collection
+    dbc.AggiungiQuery el, "PRES3000_Qry01_10_AGGIORNA_Campo_IDKEY_CALENDARIO", "Aggiorna ID Key Calendario"
+    dbc.AggiungiQuery el, "PRES3000_Qry01_11_AGGIORNA_Campo_IDKEY_GIORNALIERE", "Aggiorna ID Key Giornaliere"
+    dbc.AggiungiQuery el, "LLPP_ATTI_Qy01-11_AGGIORNA_ANNO", "Aggiorna Anno Atto (se nullo)"
+    ' usaDoCmd = True se le query leggono valori dalle form aperte (Forms!...)
+    If Not dbc.EseguiElencoQuery(el, True, False) Then Debug.Print dbc.UltimoReport
+End Sub
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 3 - transazione: o tutte le modifiche o nessuna
+'--------------------------------------------------------------------------------------------------
+Public Sub ESEMPIO_DB_03_Transazione()
+Dim dbc As New MSys_TB12_Cls03_DATABASE, bOk As Boolean
+    dbc.Apri
+    dbc.IniziaTransazione
+    bOk = dbc.EseguiSQL("UPDATE MSys_TB40_Tb01_PROGETTI SET Scel_b = False")
+    If bOk Then bOk = dbc.EseguiSQL("UPDATE MSys_TB40_Tb01_PROGETTI SET Scel_b = True WHERE COD_PROGETTO_s = 'MSys'")
+    If bOk Then dbc.ConfermaTransazione Else dbc.AnnullaTransazione: MsgBox dbc.UltimoErrore, vbExclamation
+End Sub
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 4 - spostare i collegamenti su un'altra cartella (es. dal vecchio al nuovo albero MSys)
+'--------------------------------------------------------------------------------------------------
+Public Sub ESEMPIO_DB_04_Ricollega()
+Dim dbc As New MSys_TB12_Cls03_DATABASE, v As Variant, n As Long
+    dbc.Apri                                                   ' database corrente
+    For Each v In dbc.ElencoCollegamenti("MSys_TB40_*")
+        Debug.Print v                                          ' nome|percorso
+    Next v
+    n = dbc.RicollegaTabelle("C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB40\MDB\MSys_TB40.mdb", "MSys_TB40_*")
+    Debug.Print n & " collegamenti aggiornati"
+    ' oppure un solo collegamento nuovo:
+    ' dbc.CollegaTabella "C:\...\MSys_DF11.mdb", "Msys_DF11_COD_PROGETTO"
+End Sub
+
+'--------------------------------------------------------------------------------------------------
+' ESEMPIO 5 - controlli prima di usare un oggetto
+'--------------------------------------------------------------------------------------------------
+Public Function ESEMPIO_DB_05_Controlli() As Boolean
+Dim dbc As New MSys_TB12_Cls03_DATABASE
+    ESEMPIO_DB_05_Controlli = dbc.TabellaEsiste("MSys_TB40_Tb02_PAGINE") _
+                          And dbc.CampoEsiste("MSys_TB40_Tb02_PAGINE", "NOMEOGGETTO_s") _
+                          And dbc.QueryEsiste("MSys_TB40_Qry02_01_SEL_PAGINE")
+End Function
