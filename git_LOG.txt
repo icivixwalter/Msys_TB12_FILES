@@ -580,3 +580,152 @@ C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
 
 === 2a) ADD di tutte le modifiche   [ 8:01:56]
     COMANDO: git add -A
+warning: in the working copy of '00_DOC_MASTER_PLAN/ESEMPI/MSys_TB12_Cls01_LOG_ESEMPI.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '00_DOC_MASTER_PLAN/ESEMPI/MSys_TB12_Cls02_FILE_ESEMPI.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '00_DOC_MASTER_PLAN/ESEMPI/MSys_TB12_Cls03_DATABASE_ESEMPI.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '00_DOC_MASTER_PLAN/ESEMPI/MSys_TB12_Cls04_OGGETTI_ESEMPI.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '00_DOC_MASTER_PLAN/MSys_TB12_00_MASTER_PLAN.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '00_DOC_MASTER_PLAN/MSys_TB12_Cls01_LOG.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '00_DOC_MASTER_PLAN/MSys_TB12_Cls02_FILE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '00_DOC_MASTER_PLAN/MSys_TB12_Cls03_DATABASE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '00_DOC_MASTER_PLAN/MSys_TB12_Cls04_OGGETTI.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '00_DOC_MASTER_PLAN/STRUMENTI/md2html.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Project_Msys_TB12_FILES.sublime-workspace', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'git_LOG.txt', LF will be replaced by CRLF the next time Git touches it
+    ESITO: OK
+
+=== 2b) COMMIT   [ 8:01:57]
+    COMANDO: git commit -m "2026_11_15_H08_M01_S56_aggiornamento_MSYS"
+[main d4ce577] 2026_11_15_H08_M01_S56_aggiornamento_MSYS
+ 68 files changed, 15131 insertions(+)
+ create mode 100644 00_DOC_MASTER_PLAN/ESEMPI/MSys_TB12_Cls01_LOG_ESEMPI.txt
+ create mode 100644 00_DOC_MASTER_PLAN/ESEMPI/MSys_TB12_Cls02_FILE_ESEMPI.txt
+ create mode 100644 00_DOC_MASTER_PLAN/ESEMPI/MSys_TB12_Cls03_DATABASE_ESEMPI.txt
+ create mode 100644 00_DOC_MASTER_PLAN/ESEMPI/MSys_TB12_Cls04_OGGETTI_ESEMPI.txt
+ create mode 100644 00_DOC_MASTER_PLAN/MSys_TB12_00_MASTER_PLAN.html
+ create mode 100644 00_DOC_MASTER_PLAN/MSys_TB12_00_MASTER_PLAN.md
+ create mode 100644 00_DOC_MASTER_PLAN/MSys_TB12_Cls01_LOG.html
+ create mode 100644 00_DOC_MASTER_PLAN/MSys_TB12_Cls01_LOG.md
+ create mode 100644 00_DOC_MASTER_PLAN/MSys_TB12_Cls02_FILE.html
+ create mode 100644 00_DOC_MASTER_PLAN/MSys_TB12_Cls02_FILE.md
+ create mode 100644 00_DOC_MASTER_PLAN/MSys_TB12_Cls03_DATABASE.html
+ create mode 100644 00_DOC_MASTER_PLAN/MSys_TB12_Cls03_DATABASE.md
+ create mode 100644 00_DOC_MASTER_PLAN/MSys_TB12_Cls04_OGGETTI.html
+ create mode 100644 00_DOC_MASTER_PLAN/MSys_TB12_Cls04_OGGETTI.md
+ create mode 100644 00_DOC_MASTER_PLAN/STRUMENTI/GENERA_HTML.bat
+ create mode 100644 00_DOC_MASTER_PLAN/STRUMENTI/md2html.py
+ create mode 100644 AA__________________________________________________________________________AA.txt
+ create mode 100644 MDB/BACKUP_CLAUDE_2026_11_14_23_26_43_CLASSI/Msys_TB12_FILES.mdb
+ create mode 100644 MDB/Logs/LogInfo.txt
+ create mode 100644 MDB/Logs/MSys_TB12_Cls02_FILE_2026_11_14.txt
+ create mode 100644 MDB/Logs/MSys_TB12_Cls03_DATABASE_2026_11_14.txt
+ create mode 100644 MDB/Logs/MSys_TB12_Cls04_OGGETTI_2026_11_14.txt
+ create mode 100644 MDB/Logs/MSys_TB12_Mdl01_TEST_2026_11_14.txt
+ create mode 100644 MDB/Msys_TB12_FILES.mdb
+ create mode 100644 MSYS_N02________________________________________________________________MSYS.txt
+ create mode 100644 OBJECT/CLASSI/MSys_TB12_Cls01_LOG.cls
+ create mode 100644 OBJECT/CLASSI/MSys_TB12_Cls02_FILE.cls
+ create mode 100644 OBJECT/CLASSI/MSys_TB12_Cls03_DATABASE.cls
+ create mode 100644 OBJECT/CLASSI/MSys_TB12_Cls04_OGGETTI.cls
+ create mode 100644 OBJECT/CLASSI/MSys_TB12_Mdl01_TEST.bas
+ create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/CLASSE_CLASSE_clsDBInspector.cls
+ create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/CLASSE_ClsManager.cls
+ create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/CLASSE_clsFileSystem.cls
+ create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/CLASSE_clsLogger.cls
+ create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/CLSModulo_GESTIONE_OGGETTI_TEST_TutteLeClassi.bas
+ create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/Msys_TB12_FILES_CLASSE_ClsManager.cls
+ create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/Msys_TB12_FILES_CLASSE_clsDBInspector.cls
+ create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/Msys_TB12_FILES_CLASSE_clsDatabase.cls
+ create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/Msys_TB12_FILES_CLASSE_clsFileSystem.cls
+ create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/Msys_TB12_FILES_CLASSE_clsLogger.cls
+ create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/TEST_clsFileSystem.bas
+ create mode 100644 Project_Msys_TB12_FILES.sublime-project
+ create mode 100644 Project_Msys_TB12_FILES.sublime-workspace
+ create mode 100644 README_CARTELLE_MSYS.md
+ create mode 100644 README_CLASSI_PROGETTO.MD
+ create mode 100644 README_MSYS_DF00_BASE.md
+ create mode 100644 ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
+ create mode 100644 ZIP_7ZIP_INCREMENTALE_{CRIPTA+DECODIFICA_INTERNO}.BAT
+ create mode 100644 ZIP_7ZIP_________________________________________________________________ZZ.txt
+ create mode 100644 ZZ________________________________________________________________________ZZ.txt
+ create mode 100644 Zip_N70_CREA_ElencoFile.bat
+ create mode 100644 Zip_N70_CRIPTA.bat
+ create mode 100644 Zip_N70_DECODIFICA.bat
+ create mode 100644 Zip_N70_ElencoFile.txt
+ create mode 100644 Zip_N70_ElencoFileESCLUSI.txt
+ create mode 100644 Zip_N70____________________________________________CRIPTA_DECODIFICA.txt
+ create mode 100644 git_CANCELLA_TUTTI_I_DATI_IN_GITHUB.BAT
+ create mode 100644 git_COMMIT.BAT
+ create mode 100644 git_CREATE_GITHUB.BAT
+ create mode 100644 git_CREA_SALVATAGGIO.BAT
+ create mode 100644 git_LOG.txt
+ create mode 100644 git_OPEN_OVERLEAF.BAT
+ create mode 100644 git_OpenGitHub.bat
+ create mode 100644 git_PULL.BAT
+ create mode 100644 git_PUSH.BAT
+ create mode 100644 git_RICOSTRUISCI_GITHUB.BAT
+ create mode 100644 git_STATUS+PULL+ADD+COMMIT+PUSH.BAT
+ create mode 100644 git_STATUS.BAT
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [ 8:01:57]
+    COMANDO: git fetch origin
+    ESITO: OK
+
+=== 3) PULL da GitHub   [ 8:01:58]
+    COMANDO: git pull --no-edit
+Already up to date.
+    ESITO: OK
+
+=== 4) PUSH su GitHub   [ 8:01:59]
+    COMANDO: git push
+To https://github.com/icivixwalter/Msys_TB12_FILES.git
+   07a9ad0..d4ce577  main -> main
+    ESITO: OK
+
+=== 5) STATO FINALE   [ 8:02:03]
+    COMANDO: git status -sb
+## main...origin/main
+ M git_LOG.txt
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  15/11/2026   8:02:03
+################################################################
+
+################################################################
+### INIZIO  15/11/2026   8:02:46
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [ 8:02:46]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+    ESITO: OK
+
+=== 1) STATUS   [ 8:02:46]
+    COMANDO: git status -s
+ D 00_DOC_MASTER_PLAN/ESEMPI/MSys_TB12_Cls01_LOG_ESEMPI.txt
+ D 00_DOC_MASTER_PLAN/ESEMPI/MSys_TB12_Cls02_FILE_ESEMPI.txt
+ D 00_DOC_MASTER_PLAN/ESEMPI/MSys_TB12_Cls03_DATABASE_ESEMPI.txt
+ D 00_DOC_MASTER_PLAN/ESEMPI/MSys_TB12_Cls04_OGGETTI_ESEMPI.txt
+ D 00_DOC_MASTER_PLAN/MSys_TB12_00_MASTER_PLAN.html
+ D 00_DOC_MASTER_PLAN/MSys_TB12_00_MASTER_PLAN.md
+ D 00_DOC_MASTER_PLAN/MSys_TB12_Cls01_LOG.html
+ D 00_DOC_MASTER_PLAN/MSys_TB12_Cls01_LOG.md
+ D 00_DOC_MASTER_PLAN/MSys_TB12_Cls02_FILE.html
+ D 00_DOC_MASTER_PLAN/MSys_TB12_Cls02_FILE.md
+ D 00_DOC_MASTER_PLAN/MSys_TB12_Cls03_DATABASE.html
+ D 00_DOC_MASTER_PLAN/MSys_TB12_Cls03_DATABASE.md
+ D 00_DOC_MASTER_PLAN/MSys_TB12_Cls04_OGGETTI.html
+ D 00_DOC_MASTER_PLAN/MSys_TB12_Cls04_OGGETTI.md
+ D 00_DOC_MASTER_PLAN/STRUMENTI/GENERA_HTML.bat
+ D 00_DOC_MASTER_PLAN/STRUMENTI/md2html.py
+ M git_LOG.txt
+?? MASTER_PLAN/
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [ 8:02:46]
+    COMANDO: git add -A
