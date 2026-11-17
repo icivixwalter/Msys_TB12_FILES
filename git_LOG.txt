@@ -825,3 +825,76 @@ C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
 
 === 2a) ADD di tutte le modifiche   [15:34:36]
     COMANDO: git add -A
+warning: in the working copy of 'MASTER_PLAN/MSys_TB12_00_MASTER_PLAN.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Project_Msys_TB12_FILES.sublime-workspace', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'git_LOG.txt', LF will be replaced by CRLF the next time Git touches it
+    ESITO: OK
+
+=== 2b) COMMIT   [15:34:37]
+    COMANDO: git commit -m "2026_11_17_H15_M34_S36_aggiornamento_MSYS"
+[main 7314345] 2026_11_17_H15_M34_S36_aggiornamento_MSYS
+ 19 files changed, 436 insertions(+), 263 deletions(-)
+ create mode 100644 AA_SALVATAGGI/2026_11_15_ZIP_SALVATAGGI_Msys_TB12_FILES.GE614
+ create mode 100644 AA_SALVATAGGI/2026_11_15_ZIP_SALVATAGGI_Msys_TB12_FILES_LISTA.TXT
+ create mode 100644 OBJECT/TABLES/Msys_TB99_LINK.MD
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [15:34:37]
+    COMANDO: git fetch origin
+    ESITO: OK
+
+=== 3) PULL da GitHub   [15:34:38]
+    COMANDO: git pull --no-edit
+Already up to date.
+    ESITO: OK
+
+=== 4) PUSH su GitHub   [15:34:39]
+    COMANDO: git push
+To https://github.com/icivixwalter/Msys_TB12_FILES.git
+   945a34d..7314345  main -> main
+    ESITO: OK
+
+=== 5) STATO FINALE   [15:34:42]
+    COMANDO: git status -sb
+## main...origin/main
+ M git_LOG.txt
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  17/11/2026  15:34:43
+################################################################
+
+################################################################
+### INIZIO  17/11/2026  17:20:14
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [17:20:14]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+    ESITO: OK
+
+=== 0b) PROTEZIONE .gitignore - resta sul PC e negli zip, MAI su GitHub   [17:20:14]
+    .git\info\exclude: aggiunta la regola .gitignore
+    .git\info\exclude: aggiunta la regola git_LOG.txt
+    .git\info\exclude: aggiunta la regola AA_BACKUP_GITHUB/
+    .git\info\exclude: aggiunta la regola AA_SALVATAGGI/
+    .gitignore escluso da git: OK
+
+=== 1) STATUS   [17:20:15]
+    COMANDO: git status -s
+ M ZIP_7ZIP_INCREMENTALE_{CRIPTA+DECODIFICA_INTERNO}.BAT
+ M Zip_N70_CREA_ElencoFile.bat
+ M Zip_N70_ElencoFile.txt
+ M git_COMMIT.BAT
+ M git_LOG.txt
+ M git_OPEN_OVERLEAF.BAT
+ M git_PULL.BAT
+ M git_RICOSTRUISCI_GITHUB.BAT
+ M git_STATUS+PULL+ADD+COMMIT+PUSH.BAT
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [17:20:15]
+    COMANDO: git add -A
