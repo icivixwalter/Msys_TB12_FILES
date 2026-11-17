@@ -1,3 +1,3 @@
 @echo off
 REM START SU GITHUB WEB
-start https://github.com/icivixwalter/Msys_TB12_FILES.git
+start https://github.com/icivixwalter/MSys_TB99_LINK.git

@@ -3,15 +3,15 @@
 setlocal
 REM =====================================================================
 REM DIRECTORY DEL PROGETTO:
-REM c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\
+REM c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\
 REM  git_PULL.BAT - scarica le modifiche da GitHub (origin/main)
-REM  repository: https://github.com/icivixwalter/Msys_TB12_FILES
+REM  repository: https://github.com/icivixwalter/MSys_TB99_LINK
 REM
 REM  - se nella cartella del bat esiste gia' il repository: esegue il pull
 REM  - se NON esiste la .git: crea il repository e scarica tutto da GitHub
 REM    (basta copiare questo bat in una cartella vuota e lanciarlo)
 REM =====================================================================
-set "REPO_URL=https://github.com/icivixwalter/Msys_TB12_FILES.git"
+set "REPO_URL=https://github.com/icivixwalter/MSys_TB99_LINK.git"
 set "BRANCH=main"
 
 REM ---------------------------------------------------------------------

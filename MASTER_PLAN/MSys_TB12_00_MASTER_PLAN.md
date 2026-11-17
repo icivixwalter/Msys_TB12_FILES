@@ -8,10 +8,10 @@ Aggiornato il 15/11/2026. Test automatici: **68 verifiche, 68 superate**.
 
 | Classe | Cosa fa | Sostituisce |
 | --- | --- | --- |
-| `MSys_TB12_Cls01_LOG` | log per il codice applicativo: errori con la posizione nel codice, messaggi, file personalizzati, pulizia | `Msys_TB12_FILES_CLASSE_clsLogger`, `CLASSE_clsLogger` |
-| `MSys_TB12_Cls02_FILE` | file e cartelle con API Windows Unicode a 32 e 64 bit, percorsi oltre 260 caratteri, attributi, date, elenchi, apertura, finestre di selezione | `Msys_TB12_FILES_CLASSE_clsFileSystem`, `CLASSE_clsFileSystem` |
-| `MSys_TB12_Cls03_DATABASE` | database corrente o esterno: recordset, SQL, query singole o in elenco, transazioni, tabelle collegate, compattazione | `Msys_TB12_FILES_CLASSE_clsDatabase`, `Msys_TB12_FILES_CLASSE_ClsManager`, `CLASSE_ClsManager` |
-| `MSys_TB12_Cls04_OGGETTI` | oggetti di Access tra database: elenco, esistenza, importazione, esportazione, accodamento di gruppo, inventario in tabella | `Msys_TB12_FILES_CLASSE_clsDBInspector`, `CLASSE_CLASSE_clsDBInspector` |
+| `MSys_TB12_Cls01_LOG` | log per il codice applicativo: errori con la posizione nel codice, messaggi, file personalizzati, pulizia | `MSys_TB99_LINK_CLASSE_clsLogger`, `CLASSE_clsLogger` |
+| `MSys_TB12_Cls02_FILE` | file e cartelle con API Windows Unicode a 32 e 64 bit, percorsi oltre 260 caratteri, attributi, date, elenchi, apertura, finestre di selezione | `MSys_TB99_LINK_CLASSE_clsFileSystem`, `CLASSE_clsFileSystem` |
+| `MSys_TB12_Cls03_DATABASE` | database corrente o esterno: recordset, SQL, query singole o in elenco, transazioni, tabelle collegate, compattazione | `MSys_TB99_LINK_CLASSE_clsDatabase`, `MSys_TB99_LINK_CLASSE_ClsManager`, `CLASSE_ClsManager` |
+| `MSys_TB12_Cls04_OGGETTI` | oggetti di Access tra database: elenco, esistenza, importazione, esportazione, accodamento di gruppo, inventario in tabella | `MSys_TB99_LINK_CLASSE_clsDBInspector`, `CLASSE_CLASSE_clsDBInspector` |
 | `MSys_TB12_Mdl01_TEST` | modulo di test unico per le quattro classi | `CLSModulo_GESTIONE_OGGETTI_TEST_TutteLeClassi`, `TEST_clsFileSystem` |
 
 Le versioni precedenti sono state tolte dal database e salvate in testo in `OBJECT\CLASSI_PRECEDENTI_2026_11_14_23_26_43\`.
@@ -50,12 +50,12 @@ Le classi sono **indipendenti**: ognuna ha il proprio log interno, quindi in un 
 ## Struttura della cartella
 
 ```
-Msys_TB12_FILES\
+MSys_TB99_LINK\
 ├─ 00_DOC_MASTER_PLAN\        questo documento e una scheda per classe (.md e .html)
 │  ├─ ESEMPI\                 un file .txt di esempi per ogni classe
 │  └─ STRUMENTI\              GENERA_HTML.bat + md2html.py: rigenera gli .html dai .md
 ├─ MDB\
-│  ├─ Msys_TB12_FILES.mdb     classi, modulo di test, form
+│  ├─ MSys_TB99_LINK.mdb     classi, modulo di test, form
 │  ├─ Logs\                   log delle classi e dei test
 │  └─ BACKUP_CLAUDE_...\      copia del database prima della modifica
 └─ OBJECT\
@@ -89,5 +89,5 @@ Msys_TB12_FILES\
 ## Da decidere
 
 - La form `fileDialog` contiene codice di un altro progetto (Codice Opera LLPP) con proprie API e propri log. Si può collegare a `MSys_TB12_Cls02_FILE` oppure spostarla nel progetto LLPP.
-- La form `Msys_TB12_FILES_FrmM01_GESTIONI` segue ancora il vecchio schema di nome. Secondo la grammatica diventerebbe `MSys_TB12_Frm01_M01_GESTIONI`.
+- La form `MSys_TB99_LINK_FrmM01_GESTIONI` segue ancora il vecchio schema di nome. Secondo la grammatica diventerebbe `MSys_TB12_Frm01_M01_GESTIONI`.
 - `AccodaTuttiGliOggetti` scrive in `Msys_TB03_ELENCO_ObjProgetti`: in questo database la tabella non è collegata. Va collegata, oppure si indica un'altra tabella con la proprietà `TabellaElenco`.

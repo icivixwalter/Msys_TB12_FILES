@@ -1,6 +1,6 @@
-@REM  cambia questo parametro ---------:    c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\
+@REM  cambia questo parametro ---------:    c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\
 @REM
-@REM  cambia questo parametro ---------:    _Msys_TB12_FILES
+@REM  cambia questo parametro ---------:    _MSys_TB99_LINK
 
 
 
@@ -71,8 +71,8 @@ REM  CODICI DI USCITA: 0 = svuotato / annullato dall'utente, 1 = bloccato o erro
 REM  PER UN ALTRO PROGETTO: cambiare solo NOME_REPO e URL_REPO qui sotto.
 REM ============================================================
 setlocal
-set "NOME_REPO=Msys_TB12_FILES"
-set "URL_REPO=https://github.com/icivixwalter/Msys_TB12_FILES.git"
+set "NOME_REPO=MSys_TB99_LINK"
+set "URL_REPO=https://github.com/icivixwalter/MSys_TB99_LINK.git"
 set "BRANCH=main"
 
 REM si posiziona da solo nella cartella del repository (quella di questo bat)

@@ -18,8 +18,8 @@ git_STATUS+PULL+ADD+COMMIT+PUSH.BAT
 MDB\
 MSYS_N02________________________________________________________________MSYS.txt
 OBJECT\
-Project_Msys_TB12_FILES.sublime-project
-Project_Msys_TB12_FILES.sublime-workspace
+Project_MSys_TB99_LINK.sublime-project
+Project_MSys_TB99_LINK.sublime-workspace
 README.md
 README_CARTELLE_MSYS.md
 README_CLASSI_PROGETTO.MD

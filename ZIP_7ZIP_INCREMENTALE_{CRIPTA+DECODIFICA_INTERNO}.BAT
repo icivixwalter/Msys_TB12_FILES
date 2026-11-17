@@ -1,8 +1,8 @@
 @REM  FILE .BAT DI SALVATAGGIO INCREMENTALE CON IL LOG DI CONTROLLO
 
-@REM  cambia questo parametro ---------:    c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\
+@REM  cambia questo parametro ---------:    c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\
 @REM
-@REM  cambia questo parametro ---------:    _Msys_TB12_FILES
+@REM  cambia questo parametro ---------:    _MSys_TB99_LINK
 
 
 
@@ -87,9 +87,9 @@
 @ECHO. IMPOSTO I $PARAMETRI SU TUTTO IL FILE e qui possono essere cambiati e
 @ECHO. di seguito puoi cambiare questo percorso path per una sostituzione collettiva:
 @ECHO.
-@ECHO. cambia questo parametro ---------:    c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\
+@ECHO. cambia questo parametro ---------:    c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\
 @ECHO.
-@ECHO. cambia questo parametro ---------:    _Msys_TB12_FILES
+@ECHO. cambia questo parametro ---------:    _MSys_TB99_LINK
 @ECHO.
 @ECHO.
 @ECHO.
@@ -98,10 +98,10 @@
 @ECHO.
 @ECHO.                                  effetto sostituzione collettivo
 @ECHO. --------------------------------------------------------------------------------------------------------
-@ECHO. LA PATH DI DESTINAZIONE PER I SALVATAGGI     =  c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\%CARTELLA_SALVATAGGI_S%
-@ECHO. LA CARTELLA SALVATAGGI CREATA O ESISTENTE    =  c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\AA_SALVATAGGI\
-@ECHO. LA PATH DI PARTENZA                          =  c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\
-@ECHO. FILE 7ZIP, RAR DI SALVATAGGIO                =  ZIP_SALVATAGGI_Msys_TB12_FILES
+@ECHO. LA PATH DI DESTINAZIONE PER I SALVATAGGI     =  c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\%CARTELLA_SALVATAGGI_S%
+@ECHO. LA CARTELLA SALVATAGGI CREATA O ESISTENTE    =  c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_SALVATAGGI\
+@ECHO. LA PATH DI PARTENZA                          =  c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\
+@ECHO. FILE 7ZIP, RAR DI SALVATAGGIO                =  ZIP_SALVATAGGI_MSys_TB99_LINK
 @ECHO. LISTA FILE UTILIZZATA                        =  Zip_N70_ElencoFile.txt
 @ECHO. --------------------------------------------------------------------------------------------------------
 @ECHO.
@@ -111,9 +111,9 @@
 @REM ================================================================================================
 @SET "t=0"
 @SET "CARTELLA_SALVATAGGI_S=AA_SALVATAGGI"
-@SET "PATH_PART_S=c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\"
+@SET "PATH_PART_S=c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\"
 @SET "PATH_DEST_S=%PATH_PART_S%\%CARTELLA_SALVATAGGI_S%"
-@SET "FILE_S=ZIP_SALVATAGGI_Msys_TB12_FILES"
+@SET "FILE_S=ZIP_SALVATAGGI_MSys_TB99_LINK"
 @SET "LISTA_FILE_S=Zip_N70_ElencoFile.txt"
 
 @CALL :LOG "PARAMETRI GLOBALI IMPOSTATI:"

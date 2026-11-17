@@ -94,8 +94,8 @@ if /i not "%~1"=="__COPIA_TEMP__" (
 )
 set "PROGETTO=%~2"
 
-set "NOME_REPO=Msys_TB12_FILES"
-set "URL_REPO=https://github.com/icivixwalter/Msys_TB12_FILES.git"
+set "NOME_REPO=MSys_TB99_LINK"
+set "URL_REPO=https://github.com/icivixwalter/MSys_TB99_LINK.git"
 set "BRANCH=main"
 
 cd /d "%PROGETTO%"

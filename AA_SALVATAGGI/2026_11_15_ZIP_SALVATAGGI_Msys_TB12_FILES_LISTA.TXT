@@ -1,0 +1,77 @@
+
+7-Zip 24.05 (x64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-05-14
+
+Scanning the drive for archives:
+  0M Scan c:\CASA\LINGUAGGI\ACCESS\PROGETT . S\MSys_TB99_LINK\AA_SALVATAGGI\
+                                                                             
+1 file, 2294924 bytes (2242 KiB)
+
+Listing archive: c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_SALVATAGGI\2026_11_15_ZIP_SALVATAGGI_MSys_TB99_LINK.zip
+
+--
+Path = c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_SALVATAGGI\2026_11_15_ZIP_SALVATAGGI_MSys_TB99_LINK.zip
+Type = zip
+Physical Size = 2294924
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+2026-11-07 18:13:33 ....A          312          130  AA__________________________________________________________________________AA.txt
+2026-11-15 07:59:06 ....A        10414         3447  git_CANCELLA_TUTTI_I_DATI_IN_GITHUB.BAT
+2026-11-06 17:53:43 ....A          880          528  git_COMMIT.BAT
+2026-11-15 07:59:04 ....A         4906         1857  git_CREATE_GITHUB.BAT
+2026-11-07 17:50:46 ....A         5432         2011  git_CREA_SALVATAGGIO.BAT
+2026-11-15 08:02:51 ....A        33008         3700  git_LOG.txt
+2026-11-15 08:01:18 ....A           95           95  git_OpenGitHub.bat
+2026-11-06 17:53:43 ....A          925          448  git_OPEN_OVERLEAF.BAT
+2026-11-15 07:59:01 ....A         5344         1872  git_PULL.BAT
+2026-11-06 17:53:43 ....A          473          307  git_PUSH.BAT
+2026-11-15 07:59:00 ....A        14962         4638  git_RICOSTRUISCI_GITHUB.BAT
+2026-11-15 07:58:30 ....A        10751         3375  git_STATUS+PULL+ADD+COMMIT+PUSH.BAT
+2026-11-06 17:53:43 ....A          280          207  git_STATUS.BAT
+2026-11-14 23:35:00 D....            0            0  MDB
+2026-11-14 23:26:43 D....            0            0  MDB\BACKUP_CLAUDE_2026_11_14_23_26_43_CLASSI
+2026-11-14 23:19:10 ....A      5062656      1093028  MDB\BACKUP_CLAUDE_2026_11_14_23_26_43_CLASSI\MSys_TB99_LINK.mdb
+2026-11-14 23:33:40 D....            0            0  MDB\Logs
+2026-08-07 16:13:50 ....A          189          139  MDB\Logs\LogInfo.txt
+2026-11-14 23:34:18 ....A         6164          504  MDB\Logs\MSys_TB12_Cls02_FILE_2026_11_14.txt
+2026-11-14 23:34:18 ....A         6516          921  MDB\Logs\MSys_TB12_Cls03_DATABASE_2026_11_14.txt
+2026-11-14 23:34:19 ....A         3500          500  MDB\Logs\MSys_TB12_Cls04_OGGETTI_2026_11_14.txt
+2026-11-14 23:34:19 ....A        19658         2158  MDB\Logs\MSys_TB12_Mdl01_TEST_2026_11_14.txt
+2026-11-14 23:35:00 ....A      5062656      1064044  MDB\MSys_TB99_LINK.mdb
+2026-11-07 18:13:33 ....A           23           23  MSYS_N02________________________________________________________________MSYS.txt
+2026-11-14 23:34:56 D....            0            0  OBJECT
+2026-11-14 23:35:00 D....            0            0  OBJECT\CLASSI
+2026-11-14 23:35:00 ....A        15611         4004  OBJECT\CLASSI\MSys_TB12_Cls01_LOG.cls
+2026-11-14 23:35:00 ....A        49135         9820  OBJECT\CLASSI\MSys_TB12_Cls02_FILE.cls
+2026-11-14 23:35:00 ....A        24627         5758  OBJECT\CLASSI\MSys_TB12_Cls03_DATABASE.cls
+2026-11-14 23:35:00 ....A        24203         5679  OBJECT\CLASSI\MSys_TB12_Cls04_OGGETTI.cls
+2026-11-14 23:35:00 ....A        26091         6594  OBJECT\CLASSI\MSys_TB12_Mdl01_TEST.bas
+2026-11-14 23:26:45 D....            0            0  OBJECT\CLASSI_PRECEDENTI_2026_11_14_23_26_43
+2026-11-14 23:26:45 ....A         4075         1119  OBJECT\CLASSI_PRECEDENTI_2026_11_14_23_26_43\CLASSE_CLASSE_clsDBInspector.cls
+2026-11-14 23:26:45 ....A        25498         4284  OBJECT\CLASSI_PRECEDENTI_2026_11_14_23_26_43\CLASSE_clsFileSystem.cls
+2026-11-14 23:26:45 ....A         4063         1230  OBJECT\CLASSI_PRECEDENTI_2026_11_14_23_26_43\CLASSE_clsLogger.cls
+2026-11-14 23:26:45 ....A         7081         2087  OBJECT\CLASSI_PRECEDENTI_2026_11_14_23_26_43\CLASSE_ClsManager.cls
+2026-11-14 23:26:45 ....A        38739         6435  OBJECT\CLASSI_PRECEDENTI_2026_11_14_23_26_43\CLSModulo_GESTIONE_OGGETTI_TEST_TutteLeClassi.bas
+2026-11-14 23:26:45 ....A         2687          712  OBJECT\CLASSI_PRECEDENTI_2026_11_14_23_26_43\MSys_TB99_LINK_CLASSE_clsDatabase.cls
+2026-11-14 23:26:45 ....A        15226         2639  OBJECT\CLASSI_PRECEDENTI_2026_11_14_23_26_43\MSys_TB99_LINK_CLASSE_clsDBInspector.cls
+2026-11-14 23:26:45 ....A        25530         4296  OBJECT\CLASSI_PRECEDENTI_2026_11_14_23_26_43\MSys_TB99_LINK_CLASSE_clsFileSystem.cls
+2026-11-14 23:26:45 ....A        30022         3956  OBJECT\CLASSI_PRECEDENTI_2026_11_14_23_26_43\MSys_TB99_LINK_CLASSE_clsLogger.cls
+2026-11-14 23:26:45 ....A        14268         2899  OBJECT\CLASSI_PRECEDENTI_2026_11_14_23_26_43\MSys_TB99_LINK_CLASSE_ClsManager.cls
+2026-11-14 23:26:45 ....A        14979         2994  OBJECT\CLASSI_PRECEDENTI_2026_11_14_23_26_43\TEST_clsFileSystem.bas
+2026-11-15 07:57:51 ....A           56           56  Project_MSys_TB99_LINK.sublime-project
+2026-11-15 08:01:24 ....A        18941         3440  Project_MSys_TB99_LINK.sublime-workspace
+2026-11-15 08:01:35 ....A           19           19  README.md
+2026-11-15 07:58:59 ....A        67786        14993  README_CARTELLE_MSYS.md
+2026-11-08 13:40:15 ....A          122          100  README_CLASSI_PROGETTO.MD
+2026-11-15 07:58:58 ....A        58341         5786  README_MSYS_DF00_BASE.md
+2026-11-15 07:58:56 ....A        27420         5792  ZIP_7ZIP_INCREMENTALE_{CRIPTA+DECODIFICA_INTERNO}.BAT
+2026-11-07 18:13:33 ....A           56           51  ZIP_7ZIP_________________________________________________________________ZZ.txt
+2026-11-08 19:47:47 ....A         4193         1358  Zip_N70_CREA_ElencoFile.bat
+2026-11-07 18:13:33 ....A         4220         1364  Zip_N70_CRIPTA.bat
+2026-11-07 18:13:33 ....A         4775         1474  Zip_N70_DECODIFICA.bat
+2026-11-15 08:01:47 ....A         1351          523  Zip_N70_ElencoFile.txt
+2026-11-07 18:13:33 ....A          167           85  Zip_N70_ElencoFileESCLUSI.txt
+2026-11-07 18:13:33 ....A            0            0  Zip_N70____________________________________________CRIPTA_DECODIFICA.txt
+2026-11-07 18:13:33 ....A           56           51  ZZ________________________________________________________________________ZZ.txt
+------------------- ----- ------------ ------------  ------------------------
+2026-11-15 08:02:51           10758482      2283530  52 files, 6 folders

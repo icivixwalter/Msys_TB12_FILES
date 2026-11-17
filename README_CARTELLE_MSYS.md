@@ -45,7 +45,7 @@
             │           PROJECT                          CODICE_PROJECT                    ATTIVITA
             │  --------------------------------------------------------------------------------------------------------------------------
             │            │___MSYS_BASE/                            │  CODICE =BASE              │    = @DB@BASE da utilzzare per tutti i mini progetti 
-            │            │___Msys_TB12_FILES/                            │  CODICE =DF00              │    = MODELLO BASE PER I PROGETTI MSYS                         - $Msys$DF00_(DF00 la base di tutto i progetti msys) 
+            │            │___MSys_TB99_LINK/                            │  CODICE =DF00              │    = MODELLO BASE PER I PROGETTI MSYS                         - $Msys$DF00_(DF00 la base di tutto i progetti msys) 
             │            │___MSys_DF01/                            │  CODICE =DF01              │    = DEFINIZIONE DEI COMANDI DEL MENU                         - @comandi@menu_(di tutto il @superprogetto) 
             │            │___MSys_DF02/                            │  CODICE =DF02              │    = DEFINIZIONE DEI TIPI DI OGGETTO                          - @TIPO@DI@OGGETTO_(vengono definiti i tipi di oggetto gesti, FORM, QUERY TABELLE ECC..) 
             │            │___MSys_DF05/                            │  CODICE =DF05              │    = DEFINIZIONE DELLE QUOTE DEGLI OGGETTI                    - @QUOTE@DI@PROGETTO_(con le quote per ogni subprogetto puoi definire i gruppi di oggetti utilizzati) TODO: fose inutile dupelicato controllare o sostituire con CODICE PROGETTO 
@@ -72,7 +72,7 @@
             │            │___MSys_TB02_TIPO_OGGETTI/               │  CODICE=                   │    = IL GRUPPO DI OGGETTI NECESSARI AL FUNZIONAMENTO DEI PROGETTI @gruppo@oggetti_(raggruppamento degli oggetti per ogni progetto)
             │            │___MSys_TB03_ELENCO_OGGETTI/             │  CODICE=                   │    = ELENCO DEGLI OGGETTI ASSEGNATI ad ogni progetto @eleco@project_(tutti gli oggetti necessari)
             │            │___Msys_TB05_FORMS/                      │  CODICE=                   │    = MSYS PER LA GESTIONE DI TUTTE LE FORMS *** IN RICOSTRUZIONE   
-            │            │___Msys_TB12_FILES/                      │  CODICE= TB12_FILES        │    = MSYS PER LA GESTIONE DEI FILE                           - @GESTIONE@FILE_(la gestione dei file e delle carelle con le classi syste e le @api@windows) 
+            │            │___MSys_TB99_LINK/                      │  CODICE= TB12_FILES        │    = MSYS PER LA GESTIONE DEI FILE                           - @GESTIONE@FILE_(la gestione dei file e delle carelle con le classi syste e le @api@windows) 
             │            │___Msys_TB30_UTIL/                       │  CODICE= TB30_UTIL *       │    = UTILITA IMPORTA PROGETTI ED I SERVIZI *** IN RICOSTRUZIONE
             │            │___Msys_TB40_PROG_MASTER/                │                            │    = LE FORM MASTER E LE SOTTOFORM MASTER
             │            │___MSys_TB41_VISUAL_PAG_MASTER/          │                            │    = LA VISUALIZZAZIONE DELLE PAGINE
@@ -602,7 +602,7 @@ OGGETTI CREATI MODIFICATI O MIGLIORATI
    19=dir /d *.* >>prova.txt
    [MkDirHistory]
    0=MDB
-   1=Msys_TB12_FILES
+   1=MSys_TB99_LINK
    2=PAGATO
    3=PAGATO_PETTULLI_TMP
    4=TMP

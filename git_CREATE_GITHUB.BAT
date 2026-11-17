@@ -30,7 +30,7 @@ REM      - git init SOLO se la cartella .git non esiste
 REM      - primo commit SOLO se il repository non ha ancora commit
 REM      - push SEMPRE senza --force (non sovrascrive mai dati remoti)
 REM
-REM  SE LO RILANCI SU UN PROGETTO GIA' CREATO (es. Msys_TB12_FILES):
+REM  SE LO RILANCI SU UN PROGETTO GIA' CREATO (es. MSys_TB99_LINK):
 REM   si ferma al controllo 1 ("main ESISTE GIA' su GitHub") PRIMA di
 REM   qualsiasi comando git che modifica qualcosa: nessun commit, nessun
 REM   remote add, nessun push -> NON cancella e NON modifica nulla,
@@ -41,8 +41,8 @@ REM  CODICI DI USCITA: 0 = creato / annullato dall'utente, 1 = bloccato o errore
 REM  DOPO LA CREAZIONE: per gli aggiornamenti usare git_STATUS+PULL+ADD+COMMIT+PUSH.BAT
 REM ============================================================
 setlocal
-set "NOME_REPO=Msys_TB12_FILES"
-set "URL_REPO=https://github.com/icivixwalter/Msys_TB12_FILES.git"
+set "NOME_REPO=MSys_TB99_LINK"
+set "URL_REPO=https://github.com/icivixwalter/MSys_TB99_LINK.git"
 
 REM si posiziona da solo nella cartella del repository (quella di questo bat)
 cd /d "%~dp0"

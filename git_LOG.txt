@@ -2,12 +2,12 @@
 ################################################################
 ### INIZIO  07/11/2026  17:55:12
 ### PC: HPGIACOMO   UTENTE: giaco
-### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
 ################################################################
 
 === 0) CONTROLLO REPOSITORY   [17:55:12]
     COMANDO: git rev-parse --show-toplevel
-C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
     ESITO: OK
 
 === 1) STATUS   [17:55:12]
@@ -49,12 +49,12 @@ Everything up-to-date
 ################################################################
 ### INIZIO  07/11/2026  18:01:42
 ### PC: HPGIACOMO   UTENTE: giaco
-### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
 ################################################################
 
 === 0) CONTROLLO REPOSITORY   [18:01:42]
     COMANDO: git rev-parse --show-toplevel
-C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
     ESITO: OK
 
 === 1) STATUS   [18:01:42]
@@ -82,12 +82,12 @@ C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
 ################################################################
 ### INIZIO  07/11/2026  18:03:23
 ### PC: HPGIACOMO   UTENTE: giaco
-### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
 ################################################################
 
 === 0) CONTROLLO REPOSITORY   [18:03:23]
     COMANDO: git rev-parse --show-toplevel
-C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
     ESITO: OK
 
 === 1) STATUS   [18:03:23]
@@ -116,7 +116,7 @@ Already up to date.
 
 === 4) PUSH su GitHub   [18:03:25]
     COMANDO: git push
-To https://github.com/icivixwalter/Msys_TB12_FILES.git
+To https://github.com/icivixwalter/MSys_TB99_LINK.git
    5ba8756..6ec6171  main -> main
     ESITO: OK
 
@@ -133,12 +133,12 @@ To https://github.com/icivixwalter/Msys_TB12_FILES.git
 ################################################################
 ### INIZIO  07/11/2026  18:06:33
 ### PC: HPGIACOMO   UTENTE: giaco
-### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
 ################################################################
 
 === 0) CONTROLLO REPOSITORY   [18:06:33]
     COMANDO: git rev-parse --show-toplevel
-C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
     ESITO: OK
 
 === 1) STATUS   [18:06:33]
@@ -180,12 +180,12 @@ Everything up-to-date
 ################################################################
 ### INIZIO  07/11/2026  18:09:45
 ### PC: HPGIACOMO   UTENTE: giaco
-### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
 ################################################################
 
 === 0) CONTROLLO REPOSITORY   [18:09:45]
     COMANDO: git rev-parse --show-toplevel
-C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
     ESITO: OK
 
 === 1) STATUS   [18:09:45]
@@ -207,15 +207,15 @@ C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
     RIPARTENZA DA ZERO: nuovo PRIMO COMMIT con i file attuali della cartella
 
 === 2d) COPIA DI SICUREZZA della storia del PC   [18:09:47]
-    COMANDO: git clone --mirror "C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES" "c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\AA_BACKUP_GITHUB\2026_11_07_H18_M09_S45_SalvataggioGit_PRIMA_RIPARTENZA.git"
-Cloning into bare repository 'c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\AA_BACKUP_GITHUB\2026_11_07_H18_M09_S45_SalvataggioGit_PRIMA_RIPARTENZA.git'...
+    COMANDO: git clone --mirror "C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK" "c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_BACKUP_GITHUB\2026_11_07_H18_M09_S45_SalvataggioGit_PRIMA_RIPARTENZA.git"
+Cloning into bare repository 'c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_BACKUP_GITHUB\2026_11_07_H18_M09_S45_SalvataggioGit_PRIMA_RIPARTENZA.git'...
 done.
     ESITO: OK
     PRIMO COMMIT creato: c06f20f078ac59b8da67b8eed85966d66843dac2
 
 === 4) PUSH su GitHub (PRIMO COMMIT al posto di main svuotato)   [18:09:47]
     COMANDO: git push "--force-with-lease=refs/heads/main:10452b2aca68f2a2a277b476a6e422153aafa669" origin c06f20f078ac59b8da67b8eed85966d66843dac2:refs/heads/main
-To https://github.com/icivixwalter/Msys_TB12_FILES.git
+To https://github.com/icivixwalter/MSys_TB99_LINK.git
  + 10452b2...c06f20f c06f20f078ac59b8da67b8eed85966d66843dac2 -> main (forced update)
     ESITO: OK
 
@@ -236,12 +236,12 @@ To https://github.com/icivixwalter/Msys_TB12_FILES.git
 ################################################################
 ### INIZIO  07/11/2026  18:14:50
 ### PC: HPGIACOMO   UTENTE: giaco
-### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
 ################################################################
 
 === 0) CONTROLLO REPOSITORY   [18:14:50]
     COMANDO: git rev-parse --show-toplevel
-C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
     ESITO: OK
 
 === 1) STATUS   [18:14:50]
@@ -266,15 +266,15 @@ C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
     RIPARTENZA DA ZERO: nuovo PRIMO COMMIT con i file attuali della cartella
 
 === 2d) COPIA DI SICUREZZA della storia del PC   [18:14:51]
-    COMANDO: git clone --mirror "C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES" "c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\AA_BACKUP_GITHUB\2026_11_07_H18_M14_S49_SalvataggioGit_PRIMA_RIPARTENZA.git"
-Cloning into bare repository 'c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\AA_BACKUP_GITHUB\2026_11_07_H18_M14_S49_SalvataggioGit_PRIMA_RIPARTENZA.git'...
+    COMANDO: git clone --mirror "C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK" "c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_BACKUP_GITHUB\2026_11_07_H18_M14_S49_SalvataggioGit_PRIMA_RIPARTENZA.git"
+Cloning into bare repository 'c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_BACKUP_GITHUB\2026_11_07_H18_M14_S49_SalvataggioGit_PRIMA_RIPARTENZA.git'...
 done.
     ESITO: OK
     PRIMO COMMIT creato: 5569ea4f919ba732826f232cb386f852cb1286b4
 
 === 4) PUSH su GitHub (PRIMO COMMIT al posto di main svuotato)   [18:14:52]
     COMANDO: git push "--force-with-lease=refs/heads/main:b5bba6c9574ee9f7ff6c094f2955c8df3abde2b9" origin 5569ea4f919ba732826f232cb386f852cb1286b4:refs/heads/main
-To https://github.com/icivixwalter/Msys_TB12_FILES.git
+To https://github.com/icivixwalter/MSys_TB99_LINK.git
  + b5bba6c...5569ea4 5569ea4f919ba732826f232cb386f852cb1286b4 -> main (forced update)
     ESITO: OK
 
@@ -295,19 +295,19 @@ To https://github.com/icivixwalter/Msys_TB12_FILES.git
 ################################################################
 ### INIZIO  08/11/2026  15:16:17
 ### PC: HPGIACOMO   UTENTE: giaco
-### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
 ################################################################
 
 === 0) CONTROLLO REPOSITORY   [15:16:17]
     COMANDO: git rev-parse --show-toplevel
-C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
     ESITO: OK
 
 === 1) STATUS   [15:16:17]
     COMANDO: git status -s
- M Project_Msys_TB12_FILES_BASE.sublime-project
- M Project_Msys_TB12_FILES_BASE.sublime-workspace
- M README_Msys_TB12_FILES_BASE.md
+ M Project_MSys_TB99_LINK_BASE.sublime-project
+ M Project_MSys_TB99_LINK_BASE.sublime-workspace
+ M README_MSys_TB99_LINK_BASE.md
  M ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
  M ZIP_7ZIP_INCREMENTALE_{CRIPTA+DECODIFICA_INTERNO}.BAT
 ?? README_CARTELLE_MSYS.md
@@ -316,7 +316,7 @@ C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
 
 === 2a) ADD di tutte le modifiche   [15:16:17]
     COMANDO: git add -A
-warning: in the working copy of 'Project_Msys_TB12_FILES_BASE.sublime-workspace', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Project_MSys_TB99_LINK_BASE.sublime-workspace', LF will be replaced by CRLF the next time Git touches it
     ESITO: OK
 
 === 2b) COMMIT   [15:16:17]
@@ -338,7 +338,7 @@ Already up to date.
 
 === 4) PUSH su GitHub   [15:16:20]
     COMANDO: git push
-To https://github.com/icivixwalter/Msys_TB12_FILES.git
+To https://github.com/icivixwalter/MSys_TB99_LINK.git
    5569ea4..b9f6dc6  main -> main
     ESITO: OK
 
@@ -355,43 +355,43 @@ To https://github.com/icivixwalter/Msys_TB12_FILES.git
 ################################################################
 ### INIZIO  08/11/2026  21:33:32
 ### PC: HPGIACOMO   UTENTE: giaco
-### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
 ################################################################
 
 === 0) CONTROLLO REPOSITORY   [21:33:32]
     COMANDO: git rev-parse --show-toplevel
-C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
     ESITO: OK
 
 === 1) STATUS   [21:33:32]
     COMANDO: git status -s
  D MDB/GE_MSys_DF02.mdb
  D MDB/MSys_DF02.mdb
- M Project_Msys_TB12_FILES_BASE.sublime-project
- M Project_Msys_TB12_FILES_BASE.sublime-workspace
+ M Project_MSys_TB99_LINK_BASE.sublime-project
+ M Project_MSys_TB99_LINK_BASE.sublime-workspace
  D README.md
  M README_CARTELLE_MSYS.md
- M README_Msys_TB12_FILES_BASE.md
+ M README_MSys_TB99_LINK_BASE.md
  M ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
  M ZIP_7ZIP_INCREMENTALE_{CRIPTA+DECODIFICA_INTERNO}.BAT
  M Zip_N70_ElencoFile.txt
  M git_OpenGitHub.bat
-?? MDB/GE_Msys_TB12_FILES.mdb
-?? MDB/Msys_TB12_FILES.mdb
+?? MDB/GE_MSys_TB99_LINK.mdb
+?? MDB/MSys_TB99_LINK.mdb
 ?? Zip_N70_CREA_ElencoFile.bat
     ESITO: OK
 
 === 2a) ADD di tutte le modifiche   [21:33:32]
     COMANDO: git add -A
-warning: in the working copy of 'Project_Msys_TB12_FILES_BASE.sublime-workspace', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Project_MSys_TB99_LINK_BASE.sublime-workspace', LF will be replaced by CRLF the next time Git touches it
     ESITO: OK
 
 === 2b) COMMIT   [21:33:32]
     COMANDO: git commit -m "2026_11_08_H21_M33_S32_aggiornamento_MSYS"
 [main ea5ebb7] 2026_11_08_H21_M33_S32_aggiornamento_MSYS
  12 files changed, 226 insertions(+), 146 deletions(-)
- rename MDB/{GE_MSys_DF02.mdb => GE_Msys_TB12_FILES.mdb} (100%)
- rename MDB/{MSys_DF02.mdb => Msys_TB12_FILES.mdb} (100%)
+ rename MDB/{GE_MSys_DF02.mdb => GE_MSys_TB99_LINK.mdb} (100%)
+ rename MDB/{MSys_DF02.mdb => MSys_TB99_LINK.mdb} (100%)
  delete mode 100644 README.md
  create mode 100644 Zip_N70_CREA_ElencoFile.bat
     ESITO: OK
@@ -403,15 +403,15 @@ warning: in the working copy of 'Project_Msys_TB12_FILES_BASE.sublime-workspace'
     RIPARTENZA DA ZERO: nuovo PRIMO COMMIT con i file attuali della cartella
 
 === 2d) COPIA DI SICUREZZA della storia del PC   [21:33:33]
-    COMANDO: git clone --mirror "C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES" "c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\AA_BACKUP_GITHUB\2026_11_08_H21_M33_S32_SalvataggioGit_PRIMA_RIPARTENZA.git"
-Cloning into bare repository 'c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES\AA_BACKUP_GITHUB\2026_11_08_H21_M33_S32_SalvataggioGit_PRIMA_RIPARTENZA.git'...
+    COMANDO: git clone --mirror "C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK" "c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_BACKUP_GITHUB\2026_11_08_H21_M33_S32_SalvataggioGit_PRIMA_RIPARTENZA.git"
+Cloning into bare repository 'c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_BACKUP_GITHUB\2026_11_08_H21_M33_S32_SalvataggioGit_PRIMA_RIPARTENZA.git'...
 done.
     ESITO: OK
     PRIMO COMMIT creato: da19f6724caf8d369ef5a1b5d9800c82f1d44383
 
 === 4) PUSH su GitHub (PRIMO COMMIT al posto di main svuotato)   [21:33:34]
     COMANDO: git push "--force-with-lease=refs/heads/main:10e2d9f19f6ba6e92f06df26b09108c4a16b2cb0" origin da19f6724caf8d369ef5a1b5d9800c82f1d44383:refs/heads/main
-To https://github.com/icivixwalter/Msys_TB12_FILES.git
+To https://github.com/icivixwalter/MSys_TB99_LINK.git
  + 10e2d9f...da19f67 da19f6724caf8d369ef5a1b5d9800c82f1d44383 -> main (forced update)
     ESITO: OK
 
@@ -432,23 +432,23 @@ To https://github.com/icivixwalter/Msys_TB12_FILES.git
 ################################################################
 ### INIZIO  08/11/2026  21:39:17
 ### PC: HPGIACOMO   UTENTE: giaco
-### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
 ################################################################
 
 === 0) CONTROLLO REPOSITORY   [21:39:17]
     COMANDO: git rev-parse --show-toplevel
-C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
     ESITO: OK
 
 === 1) STATUS   [21:39:17]
     COMANDO: git status -s
- M Project_Msys_TB12_FILES_BASE.sublime-workspace
+ M Project_MSys_TB99_LINK_BASE.sublime-workspace
  M git_PULL.BAT
     ESITO: OK
 
 === 2a) ADD di tutte le modifiche   [21:39:18]
     COMANDO: git add -A
-warning: in the working copy of 'Project_Msys_TB12_FILES_BASE.sublime-workspace', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Project_MSys_TB99_LINK_BASE.sublime-workspace', LF will be replaced by CRLF the next time Git touches it
     ESITO: OK
 
 === 2b) COMMIT   [21:39:18]
@@ -468,7 +468,7 @@ Already up to date.
 
 === 4) PUSH su GitHub   [21:39:20]
     COMANDO: git push
-To https://github.com/icivixwalter/Msys_TB12_FILES.git
+To https://github.com/icivixwalter/MSys_TB99_LINK.git
    da19f67..e0d5a76  main -> main
     ESITO: OK
 
@@ -486,12 +486,12 @@ To https://github.com/icivixwalter/Msys_TB12_FILES.git
 ################################################################
 ### INIZIO  08/11/2026  21:45:00
 ### PC: HPGIACOMO   UTENTE: giaco
-### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
 ################################################################
 
 === 0) CONTROLLO REPOSITORY   [21:45:00]
     COMANDO: git rev-parse --show-toplevel
-C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
     ESITO: OK
 
 === 1) STATUS   [21:45:00]
@@ -517,7 +517,7 @@ Already up to date.
 
 === 4) PUSH su GitHub   [21:45:02]
     COMANDO: git push
-To https://github.com/icivixwalter/Msys_TB12_FILES.git
+To https://github.com/icivixwalter/MSys_TB99_LINK.git
    e0d5a76..5da1ee6  main -> main
     ESITO: OK
 
@@ -534,12 +534,12 @@ To https://github.com/icivixwalter/Msys_TB12_FILES.git
 ################################################################
 ### INIZIO  15/11/2026   8:01:56
 ### PC: HPGIACOMO   UTENTE: giaco
-### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
 ################################################################
 
 === 0) CONTROLLO REPOSITORY   [ 8:01:56]
     COMANDO: git rev-parse --show-toplevel
-C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
     ESITO: OK
 
 === 1) STATUS   [ 8:01:56]
@@ -549,8 +549,8 @@ C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
 ?? MDB/
 ?? MSYS_N02________________________________________________________________MSYS.txt
 ?? OBJECT/
-?? Project_Msys_TB12_FILES.sublime-project
-?? Project_Msys_TB12_FILES.sublime-workspace
+?? Project_MSys_TB99_LINK.sublime-project
+?? Project_MSys_TB99_LINK.sublime-workspace
 ?? README_CARTELLE_MSYS.md
 ?? README_CLASSI_PROGETTO.MD
 ?? README_MSYS_DF00_BASE.md
@@ -590,7 +590,7 @@ warning: in the working copy of '00_DOC_MASTER_PLAN/MSys_TB12_Cls02_FILE.md', LF
 warning: in the working copy of '00_DOC_MASTER_PLAN/MSys_TB12_Cls03_DATABASE.md', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of '00_DOC_MASTER_PLAN/MSys_TB12_Cls04_OGGETTI.md', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of '00_DOC_MASTER_PLAN/STRUMENTI/md2html.py', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'Project_Msys_TB12_FILES.sublime-workspace', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Project_MSys_TB99_LINK.sublime-workspace', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'git_LOG.txt', LF will be replaced by CRLF the next time Git touches it
     ESITO: OK
 
@@ -615,13 +615,13 @@ warning: in the working copy of 'git_LOG.txt', LF will be replaced by CRLF the n
  create mode 100644 00_DOC_MASTER_PLAN/STRUMENTI/GENERA_HTML.bat
  create mode 100644 00_DOC_MASTER_PLAN/STRUMENTI/md2html.py
  create mode 100644 AA__________________________________________________________________________AA.txt
- create mode 100644 MDB/BACKUP_CLAUDE_2026_11_14_23_26_43_CLASSI/Msys_TB12_FILES.mdb
+ create mode 100644 MDB/BACKUP_CLAUDE_2026_11_14_23_26_43_CLASSI/MSys_TB99_LINK.mdb
  create mode 100644 MDB/Logs/LogInfo.txt
  create mode 100644 MDB/Logs/MSys_TB12_Cls02_FILE_2026_11_14.txt
  create mode 100644 MDB/Logs/MSys_TB12_Cls03_DATABASE_2026_11_14.txt
  create mode 100644 MDB/Logs/MSys_TB12_Cls04_OGGETTI_2026_11_14.txt
  create mode 100644 MDB/Logs/MSys_TB12_Mdl01_TEST_2026_11_14.txt
- create mode 100644 MDB/Msys_TB12_FILES.mdb
+ create mode 100644 MDB/MSys_TB99_LINK.mdb
  create mode 100644 MSYS_N02________________________________________________________________MSYS.txt
  create mode 100644 OBJECT/CLASSI/MSys_TB12_Cls01_LOG.cls
  create mode 100644 OBJECT/CLASSI/MSys_TB12_Cls02_FILE.cls
@@ -633,14 +633,14 @@ warning: in the working copy of 'git_LOG.txt', LF will be replaced by CRLF the n
  create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/CLASSE_clsFileSystem.cls
  create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/CLASSE_clsLogger.cls
  create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/CLSModulo_GESTIONE_OGGETTI_TEST_TutteLeClassi.bas
- create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/Msys_TB12_FILES_CLASSE_ClsManager.cls
- create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/Msys_TB12_FILES_CLASSE_clsDBInspector.cls
- create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/Msys_TB12_FILES_CLASSE_clsDatabase.cls
- create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/Msys_TB12_FILES_CLASSE_clsFileSystem.cls
- create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/Msys_TB12_FILES_CLASSE_clsLogger.cls
+ create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/MSys_TB99_LINK_CLASSE_ClsManager.cls
+ create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/MSys_TB99_LINK_CLASSE_clsDBInspector.cls
+ create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/MSys_TB99_LINK_CLASSE_clsDatabase.cls
+ create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/MSys_TB99_LINK_CLASSE_clsFileSystem.cls
+ create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/MSys_TB99_LINK_CLASSE_clsLogger.cls
  create mode 100644 OBJECT/CLASSI_PRECEDENTI_2026_11_14_23_26_43/TEST_clsFileSystem.bas
- create mode 100644 Project_Msys_TB12_FILES.sublime-project
- create mode 100644 Project_Msys_TB12_FILES.sublime-workspace
+ create mode 100644 Project_MSys_TB99_LINK.sublime-project
+ create mode 100644 Project_MSys_TB99_LINK.sublime-workspace
  create mode 100644 README_CARTELLE_MSYS.md
  create mode 100644 README_CLASSI_PROGETTO.MD
  create mode 100644 README_MSYS_DF00_BASE.md
@@ -679,7 +679,7 @@ Already up to date.
 
 === 4) PUSH su GitHub   [ 8:01:59]
     COMANDO: git push
-To https://github.com/icivixwalter/Msys_TB12_FILES.git
+To https://github.com/icivixwalter/MSys_TB99_LINK.git
    07a9ad0..d4ce577  main -> main
     ESITO: OK
 
@@ -697,12 +697,12 @@ To https://github.com/icivixwalter/Msys_TB12_FILES.git
 ################################################################
 ### INIZIO  15/11/2026   8:02:46
 ### PC: HPGIACOMO   UTENTE: giaco
-### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
 ################################################################
 
 === 0) CONTROLLO REPOSITORY   [ 8:02:46]
     COMANDO: git rev-parse --show-toplevel
-C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
     ESITO: OK
 
 === 1) STATUS   [ 8:02:46]
@@ -728,4 +728,100 @@ C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
     ESITO: OK
 
 === 2a) ADD di tutte le modifiche   [ 8:02:46]
+    COMANDO: git add -A
+warning: in the working copy of 'git_LOG.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'MASTER_PLAN/ESEMPI/MSys_TB12_Cls01_LOG_ESEMPI.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'MASTER_PLAN/ESEMPI/MSys_TB12_Cls02_FILE_ESEMPI.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'MASTER_PLAN/ESEMPI/MSys_TB12_Cls03_DATABASE_ESEMPI.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'MASTER_PLAN/ESEMPI/MSys_TB12_Cls04_OGGETTI_ESEMPI.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'MASTER_PLAN/MSys_TB12_00_MASTER_PLAN.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'MASTER_PLAN/MSys_TB12_Cls01_LOG.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'MASTER_PLAN/MSys_TB12_Cls02_FILE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'MASTER_PLAN/MSys_TB12_Cls03_DATABASE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'MASTER_PLAN/MSys_TB12_Cls04_OGGETTI.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'MASTER_PLAN/STRUMENTI/md2html.py', LF will be replaced by CRLF the next time Git touches it
+    ESITO: OK
+
+=== 2b) COMMIT   [ 8:02:46]
+    COMANDO: git commit -m "2026_11_15_H08_M02_S46_aggiornamento_MSYS"
+[main 945a34d] 2026_11_15_H08_M02_S46_aggiornamento_MSYS
+ 17 files changed, 149 insertions(+)
+ rename {00_DOC_MASTER_PLAN => MASTER_PLAN}/ESEMPI/MSys_TB12_Cls01_LOG_ESEMPI.txt (100%)
+ rename {00_DOC_MASTER_PLAN => MASTER_PLAN}/ESEMPI/MSys_TB12_Cls02_FILE_ESEMPI.txt (100%)
+ rename {00_DOC_MASTER_PLAN => MASTER_PLAN}/ESEMPI/MSys_TB12_Cls03_DATABASE_ESEMPI.txt (100%)
+ rename {00_DOC_MASTER_PLAN => MASTER_PLAN}/ESEMPI/MSys_TB12_Cls04_OGGETTI_ESEMPI.txt (100%)
+ rename {00_DOC_MASTER_PLAN => MASTER_PLAN}/MSys_TB12_00_MASTER_PLAN.html (100%)
+ rename {00_DOC_MASTER_PLAN => MASTER_PLAN}/MSys_TB12_00_MASTER_PLAN.md (100%)
+ rename {00_DOC_MASTER_PLAN => MASTER_PLAN}/MSys_TB12_Cls01_LOG.html (100%)
+ rename {00_DOC_MASTER_PLAN => MASTER_PLAN}/MSys_TB12_Cls01_LOG.md (100%)
+ rename {00_DOC_MASTER_PLAN => MASTER_PLAN}/MSys_TB12_Cls02_FILE.html (100%)
+ rename {00_DOC_MASTER_PLAN => MASTER_PLAN}/MSys_TB12_Cls02_FILE.md (100%)
+ rename {00_DOC_MASTER_PLAN => MASTER_PLAN}/MSys_TB12_Cls03_DATABASE.html (100%)
+ rename {00_DOC_MASTER_PLAN => MASTER_PLAN}/MSys_TB12_Cls03_DATABASE.md (100%)
+ rename {00_DOC_MASTER_PLAN => MASTER_PLAN}/MSys_TB12_Cls04_OGGETTI.html (100%)
+ rename {00_DOC_MASTER_PLAN => MASTER_PLAN}/MSys_TB12_Cls04_OGGETTI.md (100%)
+ rename {00_DOC_MASTER_PLAN => MASTER_PLAN}/STRUMENTI/GENERA_HTML.bat (100%)
+ rename {00_DOC_MASTER_PLAN => MASTER_PLAN}/STRUMENTI/md2html.py (100%)
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [ 8:02:46]
+    COMANDO: git fetch origin
+    ESITO: OK
+
+=== 3) PULL da GitHub   [ 8:02:47]
+    COMANDO: git pull --no-edit
+Already up to date.
+    ESITO: OK
+
+=== 4) PUSH su GitHub   [ 8:02:48]
+    COMANDO: git push
+To https://github.com/icivixwalter/MSys_TB99_LINK.git
+   d4ce577..945a34d  main -> main
+    ESITO: OK
+
+=== 5) STATO FINALE   [ 8:02:51]
+    COMANDO: git status -sb
+## main...origin/main
+ M git_LOG.txt
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  15/11/2026   8:02:51
+################################################################
+
+################################################################
+### INIZIO  17/11/2026  15:34:36
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [15:34:36]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+    ESITO: OK
+
+=== 1) STATUS   [15:34:36]
+    COMANDO: git status -s
+ M MASTER_PLAN/MSys_TB12_00_MASTER_PLAN.md
+ M MDB/Logs/MSys_TB12_Cls03_DATABASE_2026_11_14.txt
+ M Project_Msys_TB12_FILES.sublime-workspace
+ M README.md
+ M README_CARTELLE_MSYS.md
+ M README_MSYS_DF00_BASE.md
+ M ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
+ M ZIP_7ZIP_INCREMENTALE_{CRIPTA+DECODIFICA_INTERNO}.BAT
+ M Zip_N70_ElencoFile.txt
+ M git_CANCELLA_TUTTI_I_DATI_IN_GITHUB.BAT
+ M git_CREATE_GITHUB.BAT
+ M git_LOG.txt
+ M git_OpenGitHub.bat
+ M git_PULL.BAT
+ M git_RICOSTRUISCI_GITHUB.BAT
+ M git_STATUS+PULL+ADD+COMMIT+PUSH.BAT
+?? AA_SALVATAGGI/
+?? OBJECT/TABLES/
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [15:34:36]
     COMANDO: git add -A
