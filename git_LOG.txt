@@ -1010,3 +1010,31 @@ C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
 
 === 2a) ADD di tutte le modifiche   [22:00:45]
     COMANDO: git add -A
+
+################################################################
+### INIZIO  19/11/2026  16:53:17
+### PC: FABI-50-54   UTENTE: walter.rossi
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\Msys_TB12_FILES
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [16:53:17]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/Msys_TB12_FILES
+    ESITO: OK
+
+=== 0b) PROTEZIONE .gitignore - resta sul PC e negli zip, MAI su GitHub   [16:53:17]
+    .git\info\exclude: aggiunta la regola .gitignore
+    .git\info\exclude: aggiunta la regola git_LOG.txt
+    .git\info\exclude: aggiunta la regola AA_BACKUP_GITHUB/
+    .git\info\exclude: aggiunta la regola AA_SALVATAGGI/
+    .gitignore mancante: lo ricreo dal modello
+    .gitignore escluso da git: OK
+
+=== 1) STATUS   [16:53:18]
+    COMANDO: git status -s
+ M MDB/Msys_TB12_FILES.mdb
+ M git_LOG.txt
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [16:53:18]
+    COMANDO: git add -A
